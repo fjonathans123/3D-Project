@@ -37,7 +37,7 @@ public class krocoscript : MonoBehaviour
     public void resetAttack()
     {
         alreadyAttack = false;
-        anim.SetBool("isAttacking", false);
+        anim.SetBool("IsAttacking", false);
     }
     // Update is called once per frame
     public void StopAttackingPlayer()
@@ -58,13 +58,13 @@ public class krocoscript : MonoBehaviour
         if(enemyHP <- 0 )
         {
             Debug.Log("enemy Died");
-            anim.SetTrigger("die");
+            anim.SetTrigger("Die");
             GetComponent<Collider>().enabled = false;
             StartCoroutine(waitForDestroy(10f));
         }
         else
         {
-            anim.SetTrigger("damage");
+            anim.SetTrigger("Damage");
         }
     }
 

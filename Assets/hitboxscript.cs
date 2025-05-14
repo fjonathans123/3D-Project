@@ -21,7 +21,7 @@ public class hitboxscript : MonoBehaviour
             if(gm.armor > 0f)
             {
                 gm.armor -= armorDamage;
-                gm.armor -= 1f;
+                if (gm.armor < 0f)
                 {
                     gm.armor = 0f;
                 }
