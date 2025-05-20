@@ -20,6 +20,7 @@ public class hitboxscript : MonoBehaviour
         {
             if(gm.armor > 0f)
             {
+                Debug.Log("enemy damage player armor");
                 gm.armor -= armorDamage;
                 if (gm.armor < 0f)
                 {
@@ -28,6 +29,7 @@ public class hitboxscript : MonoBehaviour
             }
             else
             {
+                Debug.Log("enemy damage player health");
                 gm.health -= damage;
                 gm.healthcooldown = 5f;
             }
