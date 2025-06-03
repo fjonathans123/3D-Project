@@ -46,13 +46,13 @@ public class gameData : MonoBehaviour
         else
         {
         money = data.money;
-        levelwep1 = data.levelwep1;
-        levelwep2 = data.levelwep2;
-        levelwep3 = data.levelwep3;
-        pricewep1 = data.pricewep1;
-        pricewep2 = data.pricewep2;
-        pricewep3 = data.pricewep3;
-        healthAmount1 = data.healthKitAmount1;
+            levelwep1 = data.levelwep1;
+            levelwep2 = data.levelwep2;
+            levelwep3 = data.levelwep3;
+            pricewep1 = data.pricewep1;
+            pricewep2 = data.pricewep2;
+            pricewep3 = data.pricewep3;
+            healthAmount1 = data.healthKitAmount1;
         healthAmount2 = data.healthKitAmount2;
         ammoAmount1 = data.ammoAmount1; 
         ammoAmount2 = data.ammoAmount1;

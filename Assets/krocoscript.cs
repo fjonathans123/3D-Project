@@ -55,7 +55,7 @@ public class krocoscript : MonoBehaviour
     {
         enemyHP -= damage;
 
-        if(enemyHP <- 0 )
+        if(enemyHP <= 0 )
         {
             Debug.Log("enemy Died");
             anim.SetTrigger("Die");
