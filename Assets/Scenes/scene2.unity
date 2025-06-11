@@ -57058,6 +57058,12 @@ MonoBehaviour:
   isMelee: 0
   HitBox: {fileID: 0}
   anim: {fileID: 962572322}
+  fire: {fileID: 0}
+  lightning: {fileID: 0}
+  freeze: {fileID: 0}
+  isFrozen: 0
+  normalSpeed: 1
+  slowMotionSpeed: 0
   MoneyDrop: 0
 --- !u!65 &962572325
 BoxCollider:
@@ -80315,6 +80321,12 @@ MonoBehaviour:
   isMelee: 1
   HitBox: {fileID: 1579512984}
   anim: {fileID: 1259378336}
+  fire: {fileID: 0}
+  lightning: {fileID: 0}
+  freeze: {fileID: 0}
+  isFrozen: 0
+  normalSpeed: 1
+  slowMotionSpeed: 0
   MoneyDrop: 0
 --- !u!195 &1259378335
 NavMeshAgent:
@@ -101738,7 +101750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1998373294
 Transform:
   m_ObjectHideFlags: 0
@@ -101773,7 +101785,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5fbe0d756b9063448bf0c4696518429d, type: 2}
-  - {fileID: 2100000, guid: 5fbe0d756b9063448bf0c4696518429d, type: 2}
+  - {fileID: 2100000, guid: 60c4f99d55be7ee44a8521d1da5a59c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118081,10 +118093,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 0
   damage: 0
-  enemyHP: 10
+  enemyHP: 30
   isMelee: 1
   HitBox: {fileID: 1347786195}
   anim: {fileID: 6248334573062880338}
+  fire: {fileID: 226224765}
+  lightning: {fileID: 1998373293}
+  freeze: {fileID: 1080214662824384376}
+  isFrozen: 0
+  normalSpeed: 1
+  slowMotionSpeed: 0.5
   MoneyDrop: 0
 --- !u!195 &800927461859261588
 NavMeshAgent:

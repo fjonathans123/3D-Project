@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class krocoscript : MonoBehaviour
 {
@@ -10,12 +11,25 @@ public class krocoscript : MonoBehaviour
     public GameObject HitBox;
     public Animator anim;
     private gameData data;
+    public GameObject fire, lightning;
+    private ElementController element;
+    public FreezeEffect freeze;
+
+    public bool isFrozen = false;
+    NavMeshAgent agent;
+    public float normalSpeed = 1f;
+    private float originalAnimSpeed;
+    public float slowMotionSpeed;
 
     public int MoneyDrop = 0;
     // Start is called before the first frame update
     void Start()
     {
         data = GameObject.FindGameObjectWithTag("stats").GetComponent<gameData>();
+        element = GameObject.FindGameObjectWithTag("Player").GetComponent<ElementController>();
+        agent = GetComponent<NavMeshAgent>();
+        normalSpeed = agent.speed;
+        originalAnimSpeed = anim.speed;
         if (isMelee)
         {
             if (enemyType == 0)
@@ -65,7 +79,93 @@ public class krocoscript : MonoBehaviour
         else
         {
             anim.SetTrigger("Damage");
+            if(element.element == 1)
+            {
+                fire.SetActive(false);
+                lightning.SetActive(false);
+                freeze.isFrozen = false;
+            }
+            if (element.element == 2)
+            {
+                StartCoroutine(DPSDuration(6));
+            }
+            if (element.element == 3)
+            {
+                freeze.isFrozen = true;
+                StartCoroutine(DPSDuration(6));
+            }
+            if (element.element == 4)
+            {
+                StartCoroutine(DPSDuration(6));
+            }
         }
+    }
+    void iceDPS()
+    {
+        fire.SetActive(false);
+        lightning.SetActive(false);
+        enemyHP -= 1;
+        if(!isFrozen)
+        {
+            agent.speed = normalSpeed * slowMotionSpeed;
+            anim.speed = originalAnimSpeed * slowMotionSpeed;
+            isFrozen = true;
+        }
+    }
+
+    void lightningDPS()
+    {
+        fire.SetActive(false);
+        lightning.SetActive(true);
+        freeze.isFrozen = false;
+        enemyHP -= 3;
+    }
+
+    IEnumerator DPSDuration(float timer)
+    {
+        if(element.element == 2)
+        {
+            InvokeRepeating("fireDPS", 1.5f, 2.0f);
+            yield return new WaitForSeconds(timer);
+            CancelInvoke("fireDPS");
+            hideElement();
+        }
+        if (element.element == 3)
+        {
+            InvokeRepeating("iceDPS", 1.5f, 2.0f);
+            yield return new WaitForSeconds(timer);
+            CancelInvoke("iceDPS");
+            if (isFrozen)
+            {
+                agent.speed = normalSpeed;
+                anim.speed = originalAnimSpeed;
+                isFrozen = false;
+            }
+            hideElement();
+        }
+        if (element.element == 4)
+        {
+            InvokeRepeating("lightningDPS", 1.5f, 2.0f);
+            agent.speed = 0;
+            yield return new WaitForSeconds(timer);
+            CancelInvoke("lightningDPS");
+            agent.speed = normalSpeed;
+            hideElement();
+        }
+    }
+
+    void hideElement()
+    {
+        fire.SetActive(false);
+        lightning.SetActive(false);
+        freeze.isFrozen = false;
+    }
+
+    void fireDPS()
+    {
+        fire.SetActive(true);
+        lightning.SetActive(false);
+        freeze.isFrozen = false;
     }
 
     IEnumerator waitForDestroy(float timer)
