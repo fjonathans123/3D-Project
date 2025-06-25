@@ -10,40 +10,52 @@ public class FreezeEffect : MonoBehaviour
     private Material[] originalMaterial;
     public bool isFrozen = false;
 
+    private bool isMaterialStored = false;
+
     // Start is called before the first frame update
     void Start()
     {
         objectRederer = GetComponent<Renderer>();
-        originalMaterial = objectRederer.materials;
+        storeOriginalMaterial();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (isFrozen)
+
         {
-            changeMaterials(0, defaultMaterial);
-            changeMaterials(1, freezeMaterial);
+            if (objectRederer.materials.Length > 0)
+            {
+                Material[] frozenMaterial = new Material[originalMaterial.Length];
+                for (int i = 0; i < frozenMaterial.Length; i++)
+                {
+                    frozenMaterial[i] = freezeMaterial;
+                }
+                objectRederer.materials = frozenMaterial;
+            }
         }
         else
         {
-            resetMaterials();
+            RestoreOriginalMaterial();
         }
     }
 
-    void changeMaterials(int i, Material newMaterial)
+
+    void RestoreOriginalMaterial()
     {
-        if(i < objectRederer.materials.Length)
+        if(isMaterialStored)
         {
-            Material[] mats = objectRederer.materials;
-            mats[i] = newMaterial;
-            objectRederer.materials = mats;
-
+            objectRederer.materials = originalMaterial;
         }
     }
 
-    void resetMaterials()
+    void storeOriginalMaterial()
     {
-        objectRederer.materials = originalMaterial;
+        if(!isMaterialStored)
+        {
+            originalMaterial = objectRederer.materials;
+            isMaterialStored = true;
+        }
     }
 }

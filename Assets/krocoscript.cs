@@ -21,6 +21,8 @@ public class krocoscript : MonoBehaviour
     private float originalAnimSpeed;
     public float slowMotionSpeed;
 
+    private Coroutine currentDPSCoroutine;
+
     public int MoneyDrop = 0;
     // Start is called before the first frame update
     void Start()
@@ -87,12 +89,22 @@ public class krocoscript : MonoBehaviour
             }
             if (element.element == 2)
             {
-                StartCoroutine(DPSDuration(6));
+                if (currentDPSCoroutine != null)
+                {
+                    StopCoroutine(currentDPSCoroutine);
+                    CancelInvoke("fireDPS");
+                }
+                currentDPSCoroutine = StartCoroutine(DPSDuration(6));
             }
             if (element.element == 3)
             {
                 freeze.isFrozen = true;
-                StartCoroutine(DPSDuration(6));
+                if(currentDPSCoroutine != null)
+                {
+                    StopCoroutine(currentDPSCoroutine);
+                    CancelInvoke("iceDPS");
+                }
+                currentDPSCoroutine = StartCoroutine(DPSDuration(6));
             }
             if (element.element == 4)
             {
@@ -125,13 +137,17 @@ public class krocoscript : MonoBehaviour
     {
         if(element.element == 2)
         {
+            CancelInvoke("fireDPS");
             InvokeRepeating("fireDPS", 1.5f, 2.0f);
             yield return new WaitForSeconds(timer);
             CancelInvoke("fireDPS");
             hideElement();
+            currentDPSCoroutine = null;
+
         }
         if (element.element == 3)
         {
+            CancelInvoke("iceDPS");
             InvokeRepeating("iceDPS", 1.5f, 2.0f);
             yield return new WaitForSeconds(timer);
             CancelInvoke("iceDPS");
@@ -142,6 +158,7 @@ public class krocoscript : MonoBehaviour
                 isFrozen = false;
             }
             hideElement();
+            currentDPSCoroutine = null;
         }
         if (element.element == 4)
         {
