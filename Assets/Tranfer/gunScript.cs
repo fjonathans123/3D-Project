@@ -21,6 +21,8 @@ public class gunScript : MonoBehaviour
 
     private ElementController element;
 
+    public Gunaiming gunAim;
+
     [SerializeField] public Animator anim;
 
     public float timeBetweenShooting, spread, timeBetweenShots;
@@ -135,7 +137,7 @@ public class gunScript : MonoBehaviour
                 StartCoroutine(Reload());
             }
 
-            if(Input.GetButtonDown("Fire2"))
+            if(Input.GetKeyDown(KeyCode.C) && !gunAim.aiming)
             {
                 HitMelee();
             }
