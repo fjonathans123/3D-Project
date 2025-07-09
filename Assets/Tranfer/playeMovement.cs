@@ -121,7 +121,7 @@ public class playeMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(CustomInput.Instance.GetKey("SlowMotion")))
         {
             slowMoTrigger = ! slowMoTrigger;
         }

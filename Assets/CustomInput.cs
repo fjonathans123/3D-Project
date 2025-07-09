@@ -67,5 +67,8 @@ public class CustomInput : MonoBehaviour
     {
         keyBindings["Jump"] = (KeyCode)PlayerPrefs.GetInt("Jump", (int)KeyCode.Space);
         keyBindings["Dash"] = (KeyCode)PlayerPrefs.GetInt("Dash", (int)KeyCode.V);
+        keyBindings["SlowMotion"] = (KeyCode)PlayerPrefs.GetInt("SlowMotion", (int)KeyCode.E);
+        keyBindings["ChangeElement"] = (KeyCode)PlayerPrefs.GetInt("ChangeElement", (int)KeyCode.Q);
+        keyBindings["Reload"] = (KeyCode)PlayerPrefs.GetInt("Reload", (int)KeyCode.R);
     }
 }

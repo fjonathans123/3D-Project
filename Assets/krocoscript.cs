@@ -13,7 +13,7 @@ public class krocoscript : MonoBehaviour
     private gameData data;
     public GameObject fire, lightning;
     private ElementController element;
-    public FreezeEffect freeze;
+    public FreezeEffect[] freeze;
 
     public bool isFrozen = false;
     NavMeshAgent agent;
@@ -85,7 +85,7 @@ public class krocoscript : MonoBehaviour
             {
                 fire.SetActive(false);
                 lightning.SetActive(false);
-                freeze.isFrozen = false;
+                SetFreezeAllMaterial(false);
             }
             if (element.element == 2)
             {
@@ -98,8 +98,8 @@ public class krocoscript : MonoBehaviour
             }
             if (element.element == 3)
             {
-                freeze.isFrozen = true;
-                if(currentDPSCoroutine != null)
+                SetFreezeAllMaterial(true);
+                if (currentDPSCoroutine != null)
                 {
                     StopCoroutine(currentDPSCoroutine);
                     CancelInvoke("iceDPS");
@@ -125,11 +125,25 @@ public class krocoscript : MonoBehaviour
         }
     }
 
+    void SetFreezeAllMaterial(bool value)
+    {
+        if (freeze != null)
+        {
+            foreach (var ice in freeze)
+            {
+                if(ice != null)
+                {
+                    ice.isFrozen = value;
+                }
+            }
+        }
+    }
+
     void lightningDPS()
     {
         fire.SetActive(false);
         lightning.SetActive(true);
-        freeze.isFrozen = false;
+        SetFreezeAllMaterial(false);
         enemyHP -= 3;
     }
 
@@ -175,14 +189,14 @@ public class krocoscript : MonoBehaviour
     {
         fire.SetActive(false);
         lightning.SetActive(false);
-        freeze.isFrozen = false;
+        SetFreezeAllMaterial(false);
     }
 
     void fireDPS()
     {
         fire.SetActive(true);
         lightning.SetActive(false);
-        freeze.isFrozen = false;
+        SetFreezeAllMaterial(false);
     }
 
     IEnumerator waitForDestroy(float timer)

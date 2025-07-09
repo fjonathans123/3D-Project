@@ -57060,7 +57060,10 @@ MonoBehaviour:
   anim: {fileID: 962572322}
   fire: {fileID: 1255360393}
   lightning: {fileID: 719535632}
-  freeze: {fileID: 962572332}
+  freeze:
+  - {fileID: 962572332}
+  - {fileID: 962572331}
+  - {fileID: 962572330}
   isFrozen: 0
   normalSpeed: 1
   slowMotionSpeed: 0
@@ -72558,6 +72561,7 @@ MonoBehaviour:
   gm: {fileID: 589424667}
   pause: {fileID: 0}
   impactSpawn: {fileID: 1015048111}
+  gunAim: {fileID: 0}
   anim: {fileID: 1113541920235091482}
   timeBetweenShooting: 0.3
   spread: 0.02
@@ -73555,6 +73559,7 @@ MonoBehaviour:
   gm: {fileID: 589424667}
   pause: {fileID: 0}
   impactSpawn: {fileID: 1846320526}
+  gunAim: {fileID: 0}
   anim: {fileID: 1113541920235091482}
   timeBetweenShooting: 1
   spread: 0.06
@@ -80323,7 +80328,8 @@ MonoBehaviour:
   anim: {fileID: 1259378336}
   fire: {fileID: 1380365632}
   lightning: {fileID: 553547524}
-  freeze: {fileID: 147009607}
+  freeze:
+  - {fileID: 0}
   isFrozen: 0
   normalSpeed: 1
   slowMotionSpeed: 0
@@ -111828,6 +111834,7 @@ MonoBehaviour:
   gm: {fileID: 589424667}
   pause: {fileID: 0}
   impactSpawn: {fileID: 2060429607}
+  gunAim: {fileID: 0}
   anim: {fileID: 1113541920235091482}
   timeBetweenShooting: 0.3
   spread: 0.03
@@ -118099,7 +118106,8 @@ MonoBehaviour:
   anim: {fileID: 6248334573062880338}
   fire: {fileID: 226224765}
   lightning: {fileID: 1998373293}
-  freeze: {fileID: 1080214662824384376}
+  freeze:
+  - {fileID: 0}
   isFrozen: 0
   normalSpeed: 1
   slowMotionSpeed: 0.5
@@ -118419,6 +118427,7 @@ MonoBehaviour:
   gm: {fileID: 589424667}
   pause: {fileID: 0}
   impactSpawn: {fileID: 1015048111}
+  gunAim: {fileID: 0}
   anim: {fileID: 1113541920235091482}
   timeBetweenShooting: 0.3
   spread: 0.02

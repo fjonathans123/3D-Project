@@ -23,7 +23,7 @@ public class ElementController : MonoBehaviour
         {
             if (pause.isPaused == false)
             {
-                if (Input.GetKeyDown(KeyCode.Q))
+                if (Input.GetKeyDown(CustomInput.Instance.GetKey("ChangeElement")))
                 {
                     element++;
                     //element += (Input.GetAxis("Mouse ScrollWheel") * 10);

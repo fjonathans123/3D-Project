@@ -132,7 +132,7 @@ public class gunScript : MonoBehaviour
                 StartCoroutine(Reload());
             }
 
-            if (Input.GetKeyDown(KeyCode.R) && !isReloading && currentAmmoMagazine < magazineSize && totalAmmo > 0)
+            if (Input.GetKeyDown(CustomInput.Instance.GetKey("Reload")) && !isReloading && currentAmmoMagazine < magazineSize && totalAmmo > 0)
             {
                 StartCoroutine(Reload());
             }
