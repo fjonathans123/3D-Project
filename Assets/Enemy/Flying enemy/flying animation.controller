@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3b09b9d95f7e244942fb9be375fea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 4
+  attackRange: 10
   dragon: {fileID: 0}
   kroco: {fileID: 0}
 --- !u!114 &7333093196756368340

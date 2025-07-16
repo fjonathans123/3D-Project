@@ -20,6 +20,9 @@ public class krocoscript : MonoBehaviour
     public float normalSpeed = 1f;
     private float originalAnimSpeed;
     public float slowMotionSpeed;
+    public GameObject bullet;
+    public Transform enemyRangeBullet;
+    public float bulletHeight, bulletRange;
 
     private Coroutine currentDPSCoroutine;
 
@@ -47,6 +50,18 @@ public class krocoscript : MonoBehaviour
         {
             Debug.Log("Enemy Damaged");
             HitBox.SetActive(true);
+        }
+
+        else if (enemyType == 1)
+        {
+            if (!isMelee)
+            {
+                Rigidbody rb = Instantiate(bullet, enemyRangeBullet.transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+                rb.AddForce(transform.forward * bulletRange, ForceMode.Impulse);
+                rb.AddForce(transform.up * bulletHeight, ForceMode.Impulse);
+
+                alreadyAttack = true;
+            }
         }
     }
 

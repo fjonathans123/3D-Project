@@ -5813,6 +5813,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78440455}
   m_CullTransparentMesh: 0
+--- !u!1 &94227608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 94227609}
+  m_Layer: 0
+  m_Name: Enemy range bullet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &94227609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94227608}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1259378337}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &97412141
 GameObject:
   m_ObjectHideFlags: 0
@@ -6136,6 +6166,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd7d36859ace26e49bf0b75352879827,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd7d36859ace26e49bf0b75352879827,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bd7d36859ace26e49bf0b75352879827,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bd7d36859ace26e49bf0b75352879827,
         type: 3}
@@ -57067,6 +57112,10 @@ MonoBehaviour:
   isFrozen: 0
   normalSpeed: 1
   slowMotionSpeed: 0
+  bullet: {fileID: 0}
+  enemyRangeBullet: {fileID: 0}
+  bulletHeight: 0
+  bulletRange: 0
   MoneyDrop: 0
 --- !u!65 &962572325
 BoxCollider:
@@ -80320,10 +80369,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e746ed386379af34e8bf1dd91a8601b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: 0
+  enemyType: 1
   damage: 0
   enemyHP: 15
-  isMelee: 1
+  isMelee: 0
   HitBox: {fileID: 1579512984}
   anim: {fileID: 1259378336}
   fire: {fileID: 1380365632}
@@ -80333,6 +80382,10 @@ MonoBehaviour:
   isFrozen: 0
   normalSpeed: 1
   slowMotionSpeed: 0
+  bullet: {fileID: 8088760705983617142, guid: 80ab2a1d4db30a24cad1f195522e26b8, type: 3}
+  enemyRangeBullet: {fileID: 94227609}
+  bulletHeight: -1.5
+  bulletRange: 6
   MoneyDrop: 0
 --- !u!195 &1259378335
 NavMeshAgent:
@@ -80353,7 +80406,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 4.02
-  m_BaseOffset: 2
+  m_BaseOffset: 7
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!95 &1259378336
@@ -118111,6 +118164,10 @@ MonoBehaviour:
   isFrozen: 0
   normalSpeed: 1
   slowMotionSpeed: 0.5
+  bullet: {fileID: 0}
+  enemyRangeBullet: {fileID: 0}
+  bulletHeight: 0
+  bulletRange: 0
   MoneyDrop: 0
 --- !u!195 &800927461859261588
 NavMeshAgent:
