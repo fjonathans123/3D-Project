@@ -9,12 +9,14 @@ public class chasestate : StateMachineBehaviour
     Transform player;
     public float chaseRange = 13;
     public float attackRange = 2.5f;
+    public float chaseSpeed;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         agent = animator.GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("playeranim").transform;
+        agent.speed = chaseSpeed;
         //agent.speed = 3.5f;
     }
 
@@ -28,7 +30,11 @@ public class chasestate : StateMachineBehaviour
             animator.SetBool("IsChasing", false);
         }
         if (distance < attackRange)
+        {
             animator.SetBool("IsAttacking", true);
+            animator.SetBool("IsChasing", false);
+        }
+
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

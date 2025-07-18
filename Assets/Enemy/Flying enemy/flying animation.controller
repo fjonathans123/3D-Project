@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358f2c119797b36409ec1928e700a3b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseRange: 18
+  chaseRange: 25
 --- !u!1101 &-2050973714684184198
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3b09b9d95f7e244942fb9be375fea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 10
+  attackRange: 15
   dragon: {fileID: 0}
   kroco: {fileID: 0}
 --- !u!114 &7333093196756368340
@@ -448,8 +448,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5fd045166208848b40bf3ce47f79d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseRange: 20
-  attackRange: 4
+  chaseRange: 25
+  attackRange: 15
+  chaseSpeed: 10
 --- !u!1101 &8229432161148333804
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

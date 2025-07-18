@@ -56,9 +56,11 @@ public class krocoscript : MonoBehaviour
         {
             if (!isMelee)
             {
-                Rigidbody rb = Instantiate(bullet, enemyRangeBullet.transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-                rb.AddForce(transform.forward * bulletRange, ForceMode.Impulse);
-                rb.AddForce(transform.up * bulletHeight, ForceMode.Impulse);
+                Vector3 playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
+                Vector3 direction = (playerPosition - enemyRangeBullet.position).normalized;
+                Rigidbody rb = Instantiate(bullet, enemyRangeBullet.transform.position, Quaternion.LookRotation(direction)).GetComponent<Rigidbody>();
+                rb.AddForce(direction * bulletRange, ForceMode.Impulse);
+                rb.AddForce(Vector3.up * bulletHeight, ForceMode.Impulse);
 
                 alreadyAttack = true;
             }
@@ -68,7 +70,7 @@ public class krocoscript : MonoBehaviour
     public void resetAttack()
     {
         alreadyAttack = false;
-        anim.SetBool("IsAttacking", false);
+        //anim.SetBool("IsAttacking", false);
     }
     // Update is called once per frame
     public void StopAttackingPlayer()

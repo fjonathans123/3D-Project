@@ -80384,8 +80384,8 @@ MonoBehaviour:
   slowMotionSpeed: 0
   bullet: {fileID: 8088760705983617142, guid: 80ab2a1d4db30a24cad1f195522e26b8, type: 3}
   enemyRangeBullet: {fileID: 94227609}
-  bulletHeight: -1.5
-  bulletRange: 6
+  bulletHeight: 5
+  bulletRange: 15
   MoneyDrop: 0
 --- !u!195 &1259378335
 NavMeshAgent:
