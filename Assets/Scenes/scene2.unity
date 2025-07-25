@@ -6723,7 +6723,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1312315714}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -73608,7 +73608,7 @@ MonoBehaviour:
   gm: {fileID: 589424667}
   pause: {fileID: 0}
   impactSpawn: {fileID: 1846320526}
-  gunAim: {fileID: 0}
+  gunAim: {fileID: 2140528081}
   anim: {fileID: 1113541920235091482}
   timeBetweenShooting: 1
   spread: 0.06
@@ -98816,7 +98816,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1312315714}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -99726,6 +99726,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761006783}
   m_CullTransparentMesh: 0
+--- !u!1 &1789716047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1789716050}
+  - component: {fileID: 1789716049}
+  - component: {fileID: 1789716048}
+  m_Layer: 5
+  m_Name: Crosshair
+  m_TagString: UI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1789716048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789716047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 30e4e83857878cc4e9ea145bda17eea5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1789716049
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789716047}
+  m_CullTransparentMesh: 0
+--- !u!224 &1789716050
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789716047}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1312315714}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1791472700
 GameObject:
   m_ObjectHideFlags: 0
@@ -111887,7 +111961,7 @@ MonoBehaviour:
   gm: {fileID: 589424667}
   pause: {fileID: 0}
   impactSpawn: {fileID: 2060429607}
-  gunAim: {fileID: 0}
+  gunAim: {fileID: 438217829}
   anim: {fileID: 1113541920235091482}
   timeBetweenShooting: 0.3
   spread: 0.03
@@ -118484,7 +118558,7 @@ MonoBehaviour:
   gm: {fileID: 589424667}
   pause: {fileID: 0}
   impactSpawn: {fileID: 1015048111}
-  gunAim: {fileID: 0}
+  gunAim: {fileID: 264489}
   anim: {fileID: 1113541920235091482}
   timeBetweenShooting: 0.3
   spread: 0.02
@@ -131262,6 +131336,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68dda77d4f12e144bba1cbc35281283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8771154678713423530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8771154676978831007, guid: 156e1aa0f579e824ab08d9ba786bd937,
+    type: 3}
+  m_PrefabInstance: {fileID: 8771154678713423528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8771154678713423531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8771154678713423530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8915838dcace7429d8e9638154deb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 1789716047}
 --- !u!1 &8792313718433652050
 GameObject:
   m_ObjectHideFlags: 0

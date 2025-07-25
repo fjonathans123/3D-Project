@@ -48,6 +48,8 @@ public class gunScript : MonoBehaviour
 
     public Animator handAnim, gunAnim;
 
+    private CrosshairManager cm;
+
     private void Buttoninput()
     {
         if (allowHoldButton)
@@ -66,6 +68,8 @@ public class gunScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<playeMovement>();
         element = GameObject.FindGameObjectWithTag("Player").GetComponent<ElementController>();
         data = GameObject.FindGameObjectWithTag("stats").GetComponent<gameData>();
+        cm = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<CrosshairManager>();
+        cm.ShowCrosshair();
         readyToShoot = true;
         currentAmmoMagazine = magazineSize;
         totalAmmo = MaxAmmo - magazineSize;
@@ -78,11 +82,29 @@ public class gunScript : MonoBehaviour
             if (cs.inConversation == false  && !pause.isinventory)
             {
                 prepareShoot();
+
+                if (!gunAim.aiming)
+                {
+                    cm.ShowCrosshair();
+                }
+                else
+                {
+                    cm.HideCrosshair();
+                }
             }
         }
         else
         {
             prepareShoot();
+
+            if (!gunAim.aiming)
+            {
+                cm.ShowCrosshair();
+            }
+            else
+            {
+                cm.HideCrosshair();
+            }
         }
     }
 

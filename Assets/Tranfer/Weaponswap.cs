@@ -11,11 +11,14 @@ public class Weaponswap : MonoBehaviour
     //public Transform[] leftHandGrip, rightHandGrip;
     public TwoBoneIKConstraint leftHand, rightHand;
     //public RigBuilder rigging;
-    public Animator anim; 
+    public Animator anim;
     // Start is called before the first frame update
+
+    private CrosshairManager cm;
     void Start()
     {
         pause = GameObject.FindGameObjectWithTag("UI").GetComponent<pauseMenuController>();
+        cm = GameObject.FindGameObjectWithTag("UI").GetComponent<CrosshairManager>();
         selectweapon();
     }
 
@@ -65,7 +68,10 @@ public class Weaponswap : MonoBehaviour
                 anim.SetInteger("weaponSelection", selectedweapon);
             }
             else
+            {
                 weapon.gameObject.SetActive(false);
+                cm.HideCrosshair();
+            }
             i++;
         }
     }
