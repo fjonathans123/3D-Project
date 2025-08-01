@@ -20,6 +20,8 @@ public class WheelScrolling : MonoBehaviour
     private GameManager gm;
 
     public gunScript[] guns;
+    public Gunaiming[] gunAim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,9 @@ public class WheelScrolling : MonoBehaviour
                 items[2].transform.DOMoveX(DefaultPosition, 0.1f, true);
                 items[3].transform.DOMoveX(DefaultPosition, 0.1f, true);
                 items[4].transform.DOMoveX(DefaultPosition, 0.1f, true);
+                gunAim[1].aiming = false;
+                gunAim[2].aiming = false;
+
                 break;
             case 1:
                 items[0].transform.DOMoveX(DefaultPosition, 0.1f, true);
@@ -45,6 +50,8 @@ public class WheelScrolling : MonoBehaviour
                 items[2].transform.DOMoveX(DefaultPosition, 0.1f, true);
                 items[3].transform.DOMoveX(DefaultPosition, 0.1f, true);
                 items[4].transform.DOMoveX(DefaultPosition, 0.1f, true);
+                gunAim[0].aiming = false;
+                gunAim[2].aiming = false;
                 break;
             case 2:
                 items[0].transform.DOMoveX(DefaultPosition, 0.1f, true);
@@ -52,6 +59,8 @@ public class WheelScrolling : MonoBehaviour
                 items[2].transform.DOMoveX(selectedItemPosition, 0.1f, true);
                 items[3].transform.DOMoveX(DefaultPosition, 0.1f, true);
                 items[4].transform.DOMoveX(DefaultPosition, 0.1f, true);
+                gunAim[1].aiming = false;
+                gunAim[0].aiming = false;
                 break;
             case 3:
                 items[0].transform.DOMoveX(DefaultPosition, 0.1f, true);
@@ -59,6 +68,7 @@ public class WheelScrolling : MonoBehaviour
                 items[2].transform.DOMoveX(DefaultPosition, 0.1f, true);
                 items[3].transform.DOMoveX(selectedItemPosition, 0.1f, true);
                 items[4].transform.DOMoveX(DefaultPosition, 0.1f, true);
+                resetAim();
                 UseItem();
                 break;
 
@@ -68,6 +78,7 @@ public class WheelScrolling : MonoBehaviour
                 items[2].transform.DOMoveX(DefaultPosition, 0.1f, true);
                 items[3].transform.DOMoveX(DefaultPosition, 0.1f, true);
                 items[4].transform.DOMoveX(selectedItemPosition, 0.1f, true);
+                resetAim();
                 UseItem();
                 break;
         }
@@ -163,4 +174,13 @@ public class WheelScrolling : MonoBehaviour
             }
         }
     }
+    public void resetAim()
+    {
+        gunAim[0].aiming = false;
+        gunAim[1].aiming = false;
+        gunAim[2].aiming = false;
+    }
+
 }
+
+

@@ -15,6 +15,8 @@ public class Weaponswap : MonoBehaviour
     // Start is called before the first frame update
 
     private CrosshairManager cm;
+
+    public WheelScrolling scroll;
     void Start()
     {
         pause = GameObject.FindGameObjectWithTag("UI").GetComponent<pauseMenuController>();
@@ -57,7 +59,7 @@ public class Weaponswap : MonoBehaviour
             if (i == selectedweapon)
             {
                 weapon.gameObject.SetActive(true);
-
+                weapon.GetComponentInChildren<Renderer>().enabled = true;
                 //if(selectedweapon < 2)
                 //{
                 //rightHand.data.target = rightHandGrip[selectedweapon];
@@ -69,10 +71,22 @@ public class Weaponswap : MonoBehaviour
             }
             else
             {
-                weapon.gameObject.SetActive(false);
+                scroll.resetAim();
+                weapon.GetComponentInChildren<Renderer>().enabled = false;
+                StartCoroutine(disableAiming(scroll.gunAim[i], weapon.gameObject));
                 cm.HideCrosshair();
             }
             i++;
         }
+    }
+
+    IEnumerator disableAiming(Gunaiming aim , GameObject weapon)
+    {
+        while(aim != null &&  aim.aiming)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.1f);
+        weapon.SetActive(false);
     }
 }
