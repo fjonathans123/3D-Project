@@ -20,7 +20,7 @@ public class Weaponswap : MonoBehaviour
     void Start()
     {
         pause = GameObject.FindGameObjectWithTag("UI").GetComponent<pauseMenuController>();
-        cm = GameObject.FindGameObjectWithTag("UI").GetComponent<CrosshairManager>();
+        cm = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<CrosshairManager>();
         selectweapon();
     }
 
@@ -56,27 +56,33 @@ public class Weaponswap : MonoBehaviour
         int i = 0;
         foreach (Transform weapon in transform)
         {
-            if (i == selectedweapon)
-            {
-                weapon.gameObject.SetActive(true);
-                weapon.GetComponentInChildren<Renderer>().enabled = true;
-                //if(selectedweapon < 2)
-                //{
-                //rightHand.data.target = rightHandGrip[selectedweapon];
-                //leftHand.data.target = leftHandGrip[selectedweapon];
-                //rigging.Build();
+            var aim = scroll.gunAim[i];
+            bool isSelected = (i == selectedweapon && selectedweapon < 3);
 
-                //}
-                anim.SetInteger("weaponSelection", selectedweapon);
-            }
-            else
+            if (weapon != null)
             {
-                scroll.resetAim();
-                weapon.GetComponentInChildren<Renderer>().enabled = false;
-                StartCoroutine(disableAiming(scroll.gunAim[i], weapon.gameObject));
-                cm.HideCrosshair();
+                ResetAiming(aim, weapon.gameObject);
+                if (isSelected)
+                {
+                    weapon.gameObject.SetActive(true);
+                    weapon.GetComponentInChildren<Renderer>().enabled = true;
+                }
+                else
+                {
+                    weapon.GetComponentInChildren<Renderer>().enabled = false;
+                    weapon.gameObject.SetActive(false);
+                }
+            }
+            if (selectedweapon > 2)
+            {
+                cm.ShowCrosshair(false);
             }
             i++;
+        }
+
+        if (selectedweapon >= transform.childCount || selectedweapon < 0)
+        {
+            scroll.resetAim();
         }
     }
 
@@ -88,5 +94,13 @@ public class Weaponswap : MonoBehaviour
         }
         yield return new WaitForSeconds(0.1f);
         weapon.SetActive(false);
+    }
+
+    void ResetAiming(Gunaiming gun, GameObject weapon)
+    {
+        gun.aiming = false;
+        gun.player.changeFOV(60f);
+        weapon.transform.localPosition = gun.originalPos;
+        weapon.transform.localRotation = gun.originalRotation;
     }
 }

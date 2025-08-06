@@ -6,13 +6,8 @@ public class CrosshairManager : MonoBehaviour
 {
     public GameObject crosshair;
     
-    public void ShowCrosshair()
+    public void ShowCrosshair(bool isShow)
     {
-        crosshair.SetActive(true);
-    }
-
-    public void HideCrosshair()
-    {
-        crosshair.SetActive(false);
+        crosshair.SetActive(isShow);
     }
 }

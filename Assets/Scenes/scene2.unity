@@ -171,6 +171,9 @@ MonoBehaviour:
   sensitivity: 1
   aiming: 0
   player: {fileID: 1896775322}
+  originalPos: {x: 0, y: 0, z: 0}
+  cm: {fileID: 8771154678713423531}
+  originalRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &264490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27318,6 +27321,9 @@ MonoBehaviour:
   sensitivity: 1
   aiming: 0
   player: {fileID: 1896775322}
+  originalPos: {x: 0, y: 0, z: 0}
+  cm: {fileID: 8771154678713423531}
+  originalRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &448864960
 GameObject:
   m_ObjectHideFlags: 0
@@ -45002,6 +45008,7 @@ MonoBehaviour:
   leftHand: {fileID: 0}
   rightHand: {fileID: 0}
   anim: {fileID: 0}
+  scroll: {fileID: 0}
 --- !u!1001 &653353087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92658,6 +92665,10 @@ MonoBehaviour:
   - {fileID: 2103332855}
   - {fileID: 1188261719}
   - {fileID: 1099294674}
+  gunAim:
+  - {fileID: 264489}
+  - {fileID: 2140528081}
+  - {fileID: 438217829}
 --- !u!114 &1531055897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101603,6 +101614,7 @@ MonoBehaviour:
   leftHand: {fileID: 0}
   rightHand: {fileID: 0}
   anim: {fileID: 1446486999}
+  scroll: {fileID: 1531055896}
 --- !u!1 &1985813576
 GameObject:
   m_ObjectHideFlags: 0
@@ -117135,6 +117147,9 @@ MonoBehaviour:
   sensitivity: 1
   aiming: 0
   player: {fileID: 1896775322}
+  originalPos: {x: 0, y: 0, z: 0}
+  cm: {fileID: 8771154678713423531}
+  originalRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &2140528082
 MonoBehaviour:
   m_ObjectHideFlags: 0

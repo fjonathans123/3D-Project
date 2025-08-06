@@ -27,6 +27,11 @@ public class WheelScrolling : MonoBehaviour
     {
         stats = GameObject.FindGameObjectWithTag("stats").GetComponent<GameManager>();
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+        foreach(var aim in gunAim)
+        {
+            aim.AssignOriginalTransform();
+        }
     }
 
     // Update is called once per frame
