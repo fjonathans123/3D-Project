@@ -50,6 +50,8 @@ public class gunScript : MonoBehaviour
 
     private CrosshairManager cm;
 
+    private Coroutine reload;
+
     private void Buttoninput()
     {
         if (allowHoldButton)
@@ -97,7 +99,7 @@ public class gunScript : MonoBehaviour
             DisplayAmmo();
             Aim();
             Buttoninput();
-            if (readyToShoot && shooting && currentAmmoMagazine > 0)
+            if (readyToShoot && shooting && currentAmmoMagazine > 0 && !isReloading)
             {
                 if (element.element == 2 && gm.FireMana > 0f)
                 {
@@ -132,12 +134,12 @@ public class gunScript : MonoBehaviour
 
             if (currentAmmoMagazine == 0 && !isReloading && currentAmmoMagazine < magazineSize && totalAmmo > 0)
             {
-                StartCoroutine(Reload());
+                reload = StartCoroutine(Reload());
             }
 
             if (Input.GetKeyDown(CustomInput.Instance.GetKey("Reload")) && !isReloading && currentAmmoMagazine < magazineSize && totalAmmo > 0)
             {
-                StartCoroutine(Reload());
+                reload = StartCoroutine(Reload());
             }
 
             if(Input.GetKeyDown(KeyCode.C) && !gunAim.aiming)
@@ -327,5 +329,46 @@ public class gunScript : MonoBehaviour
 
 
         isReloading = false;
+        reload = null;
+    }
+
+    private void OnDisable()
+    {
+        if(reload != null)
+        {
+            StopCoroutine(reload);
+            reload = null;
+        }
+
+        isReloading = false;
+        if (handAnim != null)
+        {
+            handAnim.SetBool("IsReloading", false);
+            gunAnim.Play("Idle Pistol", 0, 0f);
+        }
+        if (gunAnim != null)
+        {
+            gunAnim.SetBool("IsReloading", false);
+            gunAnim.Play("Gun Idle", 0, 0f);
+        }
+    }
+
+    private void OnEnable()
+    {
+        isReloading = false;
+        readyToShoot = true;
+
+        if (handAnim != null)
+        {
+            handAnim.SetBool("IsReloading", false);
+            handAnim.Play("Idle Pistol", 0, 0f);
+        }
+
+        if (gunAnim != null)
+        {
+            gunAnim.SetBool("IsReloading", false);
+            handAnim.Play("Gun Idle", 0, 0f);
+
+        }
     }
 }
