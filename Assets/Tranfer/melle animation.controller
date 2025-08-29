@@ -266,6 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRange: 6.5
   dragon: {fileID: 0}
+  kroco: {fileID: 0}
 --- !u!114 &-4804003432138804556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -571,6 +572,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseRange: 20
   attackRange: 6.5
+  chaseSpeed: 0
+  rotationSpeed: 0
+  climbMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1102 &4274582590511521524
 AnimatorState:
   serializedVersion: 6

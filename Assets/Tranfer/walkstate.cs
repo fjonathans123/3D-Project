@@ -14,11 +14,18 @@ public class walkstate : StateMachineBehaviour
     {
         timer = 0f;
         player = GameObject.FindGameObjectWithTag("playeranim").transform;
-        GameObject g = GameObject.FindGameObjectWithTag("waypoint");
+
         agent = animator.GetComponent<NavMeshAgent>();
         agent.speed = 1.5f;
-        foreach (Transform t in g.transform)
-            waypoints.Add(t);
+        agent.isStopped = false;
+
+        if(waypoints.Count == 0)
+        {
+            GameObject g = GameObject.FindGameObjectWithTag("waypoint");
+            foreach (Transform t in g.transform)
+                waypoints.Add(t);
+        }
+
 
         agent.SetDestination(waypoints[Random.Range(0, waypoints.Count)].position);
     }
@@ -42,7 +49,9 @@ public class walkstate : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        agent.SetDestination(agent.transform.position);  
+        //agent.SetDestination(agent.transform.position);
+        agent.ResetPath();
+
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

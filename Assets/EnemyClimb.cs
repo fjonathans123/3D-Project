@@ -12,7 +12,10 @@ public class EnemyClimb : MonoBehaviour
 
     private NavMeshAgent agent;
     private Animator anim;
-    private bool isClimbing;
+    public bool isClimbing;
+
+    private float climbCooldown = 1f;
+    private float lastClimbTime = -10f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +29,12 @@ public class EnemyClimb : MonoBehaviour
         
     }
 
-    public bool checkClimb()
+    public bool CanClimb(out Vector3 climbPoint)
     {
-        if (isClimbing) return true;
+        climbPoint = Vector3.zero;
+        if (isClimbing || Time.time < lastClimbTime + climbCooldown)
+            return false;
+
         RaycastHit hit;
         if(Physics.Raycast(climbCheckOrigin.position, transform.forward, out hit, ClimbRange, climbMask))
         {
@@ -39,6 +45,7 @@ public class EnemyClimb : MonoBehaviour
                 Transform climbTarget = hit.collider.transform.Find("CLimbPoint");
                 if (climbTarget != null)
                 {
+                    climbPoint = climbTarget.position;
                     return true;
                 }
             }
@@ -47,7 +54,17 @@ public class EnemyClimb : MonoBehaviour
         return false;
     }
 
-    IEnumerator enemyClimb (Vector3 targetPosition)
+    public void StartClimb(Vector3 targetPosition, Animator animator)
+    {
+        if (!isClimbing)
+        {
+            lastClimbTime = Time.time;
+            animator.SetBool("IsClimbing", true);
+            StartCoroutine(enemyClimb(targetPosition, animator));
+        }
+    }
+
+    IEnumerator enemyClimb (Vector3 targetPosition, Animator animator)
     {
         isClimbing = true;
         agent.isStopped = true;
@@ -57,7 +74,7 @@ public class EnemyClimb : MonoBehaviour
 
         float climbDuration = 1.0f;
         float elapsed = 0f;
-        Vector4 startPosition = transform.position;
+        Vector3 startPosition = transform.position;
 
         while(elapsed < climbDuration)
         {
@@ -74,5 +91,6 @@ public class EnemyClimb : MonoBehaviour
         agent.isStopped = false;
 
         isClimbing = false;
+        animator.SetBool("IsClimbing", false);
     }
 }
