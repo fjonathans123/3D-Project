@@ -46,8 +46,13 @@ public class EnemyClimb : MonoBehaviour
                 if (climbTarget != null)
                 {
                     climbPoint = climbTarget.position;
-                    return true;
                 }
+                else
+                {
+                    climbPoint = hit.point + transform.forward * 1.2f;
+                    climbPoint.y = transform.position.y;
+                }
+                return true;
             }
         }
 
@@ -59,7 +64,7 @@ public class EnemyClimb : MonoBehaviour
         if (!isClimbing)
         {
             lastClimbTime = Time.time;
-            animator.SetBool("IsClimbing", true);
+            animator.SetTrigger("IsClimbing");
             StartCoroutine(enemyClimb(targetPosition, animator));
         }
     }
@@ -78,7 +83,14 @@ public class EnemyClimb : MonoBehaviour
 
         while(elapsed < climbDuration)
         {
-            transform.position = Vector3.Lerp(startPosition, targetPosition, elapsed / climbDuration);
+            //transform.position = Vector3.Lerp(startPosition, targetPosition, elapsed / climbDuration);
+
+            float t = elapsed / climbDuration;
+            float heightOffset = Mathf.Sin(Mathf.PI * t) * 0.5f;
+            Vector3 position = Vector3.Lerp(startPosition, targetPosition, t);
+            position.y += heightOffset;
+            transform.position = position;
+
             elapsed += Time.deltaTime;
             yield return null;
         }
@@ -91,6 +103,6 @@ public class EnemyClimb : MonoBehaviour
         agent.isStopped = false;
 
         isClimbing = false;
-        animator.SetBool("IsClimbing", false);
+        animator.SetTrigger("IsClimbing");
     }
 }

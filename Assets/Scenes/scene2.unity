@@ -17234,7 +17234,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74728
+  m_Name: pb_Mesh85200
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44734,7 +44734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590913537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.9, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 1.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 962572326}
@@ -57345,8 +57345,9 @@ MonoBehaviour:
   maxClimbHeight: 2
   climbMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4096
   climbCheckOrigin: {fileID: 590913538}
+  isClimbing: 0
 --- !u!1 &974852874
 GameObject:
   m_ObjectHideFlags: 0
@@ -91532,7 +91533,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh75290
+  m_Name: pb_Mesh85768
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
