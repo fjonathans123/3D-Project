@@ -26,6 +26,8 @@ public class krocoscript : MonoBehaviour
 
     private Coroutine currentDPSCoroutine;
 
+    public bool isStun = false;
+
     public int MoneyDrop = 0;
     // Start is called before the first frame update
     void Start()
@@ -162,6 +164,12 @@ public class krocoscript : MonoBehaviour
         lightning.SetActive(true);
         SetFreezeAllMaterial(false);
         enemyHP -= 3;
+        if (!isStun)
+        {
+            agent.speed = 0;
+            isStun = false;
+        }
+        hideElement();
     }
 
     IEnumerator DPSDuration(float timer)
@@ -194,11 +202,17 @@ public class krocoscript : MonoBehaviour
         if (element.element == 4)
         {
             InvokeRepeating("lightningDPS", 1.5f, 2.0f);
-            agent.speed = 0;
+            anim.SetBool("IsStunned", true);
             yield return new WaitForSeconds(timer);
             CancelInvoke("lightningDPS");
-            agent.speed = normalSpeed;
+            anim.SetBool("IsStunned", false);
             hideElement();
+
+            if (isStun)
+            {
+                agent.speed = normalSpeed;
+                isStun = false;
+            }
         }
     }
 
