@@ -38807,7 +38807,7 @@ GameObject:
   - component: {fileID: 526544929}
   - component: {fileID: 526544931}
   - component: {fileID: 526544930}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57230,7 +57230,7 @@ MonoBehaviour:
   enemyType: 0
   damage: 0
   enemyHP: 20
-  isMelee: 0
+  isMelee: 1
   HitBox: {fileID: 526544928}
   anim: {fileID: 962572322}
   fire: {fileID: 1255360393}
@@ -57246,6 +57246,7 @@ MonoBehaviour:
   enemyRangeBullet: {fileID: 0}
   bulletHeight: 0
   bulletRange: 0
+  isStun: 0
   MoneyDrop: 0
 --- !u!65 &962572325
 BoxCollider:
@@ -80628,6 +80629,7 @@ MonoBehaviour:
   enemyRangeBullet: {fileID: 94227609}
   bulletHeight: 5
   bulletRange: 15
+  isStun: 0
   MoneyDrop: 0
 --- !u!195 &1259378335
 NavMeshAgent:
@@ -118678,6 +118680,7 @@ MonoBehaviour:
   enemyRangeBullet: {fileID: 0}
   bulletHeight: 0
   bulletRange: 0
+  isStun: 0
   MoneyDrop: 0
 --- !u!195 &800927461859261588
 NavMeshAgent:

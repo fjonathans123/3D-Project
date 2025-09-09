@@ -52,6 +52,14 @@ public class gunScript : MonoBehaviour
 
     private Coroutine reload;
 
+    int ignoreLayer;
+
+    private void Awake()
+    {
+        ignoreLayer = LayerMask.GetMask("EnemyHitbox");
+    }
+
+    
     private void Buttoninput()
     {
         if (allowHoldButton)
@@ -153,7 +161,7 @@ public class gunScript : MonoBehaviour
     void HitMelee()
     {
         RaycastHit hit; 
-        if(Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, meleeRange))
+        if(Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, meleeRange, ~ignoreLayer))
         {
             krocoscript enemy = hit.transform.GetComponent<krocoscript>();
             dragonScript dragon = hit.transform.GetComponent<dragonScript>();
@@ -178,7 +186,7 @@ public class gunScript : MonoBehaviour
     void Aim()
     {
         RaycastHit aim;
-        if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out aim, range))
+        if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out aim, range, ~ignoreLayer))
         {
             krocoscript enemy = aim.transform.GetComponent<krocoscript>();
             dragonScript dragon = aim.transform.GetComponent<dragonScript>();
@@ -215,7 +223,7 @@ public class gunScript : MonoBehaviour
         RaycastHit hit;
         BulletSpawn();
         recoil.RecoilFire();
-        if (Physics.Raycast(fpsCamera.transform.position, direction, out hit, range))
+        if (Physics.Raycast(fpsCamera.transform.position, direction, out hit, range, ~ignoreLayer))
         {
             krocoscript enemy = hit.transform.GetComponent<krocoscript>();
             dragonScript dragon = hit.transform.GetComponent<dragonScript>();
