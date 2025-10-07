@@ -17,6 +17,13 @@ public class EnemyClimb : MonoBehaviour
     private float climbCooldown = 1f;
     private float lastClimbTime = -10f;
 
+    private Vector3 lastWallHit;
+    private Vector3 lastLedgeHit;
+    public Transform player;
+
+    private Vector3 lastPosition;
+    private float stuckTimer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +33,18 @@ public class EnemyClimb : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        StuckChecker();
+        if(!isClimbing && player != null)
+        {
+            if(!agent.hasPath || agent.pathStatus == NavMeshPathStatus.PathInvalid)
+            {
+                Vector3 climbPoint;
+                if(CanClimb(out climbPoint))
+                {
+                    StartClimb(climbPoint, anim);
+                }
+            }
+        }
     }
 
     public bool CanClimb(out Vector3 climbPoint)
@@ -104,5 +122,42 @@ public class EnemyClimb : MonoBehaviour
 
         isClimbing = false;
         animator.SetTrigger("IsClimbing");
+    }
+
+    private void StuckChecker()
+    {
+        if (isClimbing || !agent.enabled) return;
+
+        float distanceMove = (transform.position - lastPosition).magnitude;
+        if(agent.hasPath && !agent.pathPending && distanceMove < 0.05f && agent.velocity.sqrMagnitude < 0.01f)
+        {
+            stuckTimer += Time.deltaTime;
+            if(stuckTimer > 1.0f)
+            {
+                NavMeshHit navhit;
+                if(NavMesh.SamplePosition(transform.position, out navhit, 2f, NavMesh.AllAreas))
+                {
+                    agent.Warp(navhit.position);
+                    if(!agent.pathPending && !agent.hasPath)
+                    {
+                        agent.SetDestination(player.position);  
+                    }
+                    agent.ResetPath();
+                    agent.isStopped = false;
+
+                    if(player != null)
+                    {
+                        agent.SetDestination(player.position);
+                    }
+                }
+                stuckTimer = 0f;
+            }
+        }
+        else
+        {
+            stuckTimer = 0f;
+
+        }
+        lastPosition = transform.position;
     }
 }
