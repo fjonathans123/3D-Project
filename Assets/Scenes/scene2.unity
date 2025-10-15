@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: eb82a1a4721180a4ba0c27baf3c7d651, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: ade0f196a1a16f24b9a4b49eb761b832, type: 2}
 --- !u!1 &264487
 GameObject:
   m_ObjectHideFlags: 0
@@ -6467,6 +6467,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 'FlyingMonsterAnimation '
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd7d36859ace26e49bf0b75352879827,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bd7d36859ace26e49bf0b75352879827,
         type: 3}
@@ -17234,7 +17239,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh59040
+  m_Name: pb_Mesh169598
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38840,8 +38845,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b355ca70e04e144a63205567a38bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  armorDamage: 0
+  damage: 5
+  armorDamage: 5
 --- !u!65 &526544931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38853,8 +38858,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.7824955, z: 1.65555}
-  m_Center: {x: 0, y: 0.89124775, z: 0.327775}
+  m_Size: {x: 1, y: 2.7824955, z: 4.7924223}
+  m_Center: {x: 0, y: 0.89124775, z: 1.8962111}
 --- !u!1 &527451716
 GameObject:
   m_ObjectHideFlags: 0
@@ -57349,6 +57354,7 @@ MonoBehaviour:
     m_Bits: 4096
   climbCheckOrigin: {fileID: 590913538}
   isClimbing: 0
+  player: {fileID: 1896775321}
 --- !u!1 &974852874
 GameObject:
   m_ObjectHideFlags: 0
@@ -91535,7 +91541,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh59608
+  m_Name: pb_Mesh170166
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -131043,8 +131049,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: 168803110775c1a4689fc59ced4ed635,
-        type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aed77b64d25e2f43a418da0a80dea3b, type: 3}
 --- !u!4 &8359890690475728379

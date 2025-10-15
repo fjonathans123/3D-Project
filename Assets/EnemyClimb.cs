@@ -53,24 +53,27 @@ public class EnemyClimb : MonoBehaviour
         if (isClimbing || Time.time < lastClimbTime + climbCooldown)
             return false;
 
+        Vector3 distanceToPlayer = (player.position - transform.position).normalized;
+        float dot = Vector3.Dot(transform.forward, distanceToPlayer);
+        if (dot < 0.5f)
+            return false; 
+
         RaycastHit hit;
         if(Physics.Raycast(climbCheckOrigin.position, transform.forward, out hit, ClimbRange, climbMask))
         {
-            float heightDifference = hit.collider.bounds.max.y - transform.position.y;
+            lastWallHit = hit.point;
+            Vector3 climbCheckStart = hit.point + Vector3.up * maxClimbHeight;
 
-            if(heightDifference <= maxClimbHeight)
+            RaycastHit climbHit;
+            if(Physics.Raycast(climbCheckStart, Vector3.down, out climbHit, maxClimbHeight + 1f, climbMask))
             {
-                Transform climbTarget = hit.collider.transform.Find("CLimbPoint");
-                if (climbTarget != null)
+                lastLedgeHit = climbHit.point;
+                float heightDifference = climbHit.point.y - transform.position.y;
+                if(heightDifference <= maxClimbHeight && heightDifference > 0.2f)
                 {
-                    climbPoint = climbTarget.position;
+                    climbPoint = climbHit.point + transform.forward * 2f;
+                    return true;    
                 }
-                else
-                {
-                    climbPoint = hit.point + transform.forward * 1.2f;
-                    climbPoint.y = transform.position.y;
-                }
-                return true;
             }
         }
 
@@ -82,7 +85,7 @@ public class EnemyClimb : MonoBehaviour
         if (!isClimbing)
         {
             lastClimbTime = Time.time;
-            animator.SetTrigger("IsClimbing");
+            animator.SetBool("IsClimbing", true);
             StartCoroutine(enemyClimb(targetPosition, animator));
         }
     }
@@ -109,19 +112,54 @@ public class EnemyClimb : MonoBehaviour
             position.y += heightOffset;
             transform.position = position;
 
+            if(player != null)
+            {
+                Vector3 direction = (player.position - transform.position).normalized;
+                direction.y = 0f;
+                if(direction.sqrMagnitude > 0.001f)
+                {
+                    Quaternion lookRot = Quaternion.LookRotation(direction);
+                    transform.rotation = Quaternion.Slerp(
+                        transform.rotation,
+                        lookRot,
+                        Time.deltaTime *5f);
+                }
+            }
+
             elapsed += Time.deltaTime;
             yield return null;
         }
 
-        transform.position = targetPosition;
+        Vector3 finalposition = targetPosition + transform.forward * .5f;
+        transform.position = finalposition;
 
         yield return new WaitForSeconds(0.2f);
-        agent.Warp(targetPosition);
+
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(finalposition, out hit,1f, NavMesh.AllAreas))
+        {
+            finalposition = hit.position;
+        }
+        agent.Warp(finalposition);
+        NavMeshHit hit2;
+        if (NavMesh.SamplePosition(finalposition, out hit2, 1f, NavMesh.AllAreas))
+        {
+            agent.Warp(hit2.position);
+        }
+        else
+        {
+            Debug.LogWarning("[Enemy Climb] no valid navmesh , retrying recovery");
+            isClimbing = false;
+            yield break;
+        }
+
+        yield return null;
+        agent.ResetPath();
         agent.updatePosition = true;
         agent.isStopped = false;
 
         isClimbing = false;
-        animator.SetTrigger("IsClimbing");
+        animator.SetBool("IsClimbing", false);
     }
 
     private void StuckChecker()
