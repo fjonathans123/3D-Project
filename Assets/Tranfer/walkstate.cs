@@ -8,6 +8,7 @@ public class walkstate : StateMachineBehaviour
     List<Transform> waypoints = new List<Transform>();
     NavMeshAgent agent;
     Transform player;
+    public string WaypointGameobject = "";
     public float chaseRange = 10f; 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -21,7 +22,7 @@ public class walkstate : StateMachineBehaviour
 
         if(waypoints.Count == 0)
         {
-            GameObject g = GameObject.FindGameObjectWithTag("waypoint");
+            GameObject g = GameObject.Find(WaypointGameobject);
             foreach (Transform t in g.transform)
                 waypoints.Add(t);
         }

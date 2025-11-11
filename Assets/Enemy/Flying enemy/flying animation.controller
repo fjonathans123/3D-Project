@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358f2c119797b36409ec1928e700a3b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaypointGameobject: waypoint
   chaseRange: 25
 --- !u!1101 &-2050973714684184198
 AnimatorStateTransition:
@@ -451,6 +452,10 @@ MonoBehaviour:
   chaseRange: 25
   attackRange: 15
   chaseSpeed: 10
+  rotationSpeed: 0
+  climbMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1101 &8229432161148333804
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
