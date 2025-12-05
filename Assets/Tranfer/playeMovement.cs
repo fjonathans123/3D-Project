@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using TMPro;
 
 public class playeMovement : MonoBehaviour
 {
@@ -52,6 +53,8 @@ public class playeMovement : MonoBehaviour
     public LayerMask itemLayer;
 
     public GameObject inventoryPanel;
+
+    public TextMeshProUGUI dashCounterTxt, dashCooldownTxt;
 
 
     // Start is called before the first frame update
@@ -148,9 +151,10 @@ public class playeMovement : MonoBehaviour
 
             move = new Vector3(x, 0f, z).normalized;
 
-        if (Input.GetKeyDown(CustomInput.Instance.GetKey("Dash")) && !isDashing && dashCounter < 2 && canDash)
+        if (Input.GetKeyDown(CustomInput.Instance.GetKey("Dash")) && !isDashing && dashCounter > 0 && canDash)
         {
             StartCoroutine(playerDashing());
+            dashCounterTxt.text = dashCounter.ToString();
         }
         else
         {
@@ -161,10 +165,13 @@ public class playeMovement : MonoBehaviour
         if(!canDash)
         {
             cooldownDash -= Time.deltaTime;
+            dashCooldownTxt.text = cooldownDash.ToString("F1");
             if(cooldownDash <= 0f)
             {
                 canDash = true;
                 cooldownDash = 0f;
+                dashCooldownTxt.text = "";
+                dashCounterTxt.text = dashCounter.ToString();
             }
         }
 
@@ -177,9 +184,9 @@ public class playeMovement : MonoBehaviour
 
     IEnumerator playerDashing()
     {
-        if(dashCounter < 2)
+        if(dashCounter > 0)
         {
-            dashCounter++;
+            dashCounter--;
             isDashing = true;
             changeFOV(80f);
             float startTime = Time.time;
@@ -193,11 +200,11 @@ public class playeMovement : MonoBehaviour
             isDashing = false;
             changeFOV(60f);
 
-            if(dashCounter >= 2)
+            if(dashCounter <= 0)
             {
                 canDash = false;
                 cooldownDash = 3f;
-                dashCounter = 0;
+                dashCounter = 2;
             }
         }
         
