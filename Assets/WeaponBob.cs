@@ -11,6 +11,13 @@ public class WeaponBob : MonoBehaviour
     float sinY = 0f;
     float sinX = 0f;
     Vector3 lastPosition;
+
+    public AudioSource footStepSource;
+    public AudioClip footstepsSound;
+    public float stepThreshold = -0.95f;
+    private bool stepped = false;
+    public float inputthreshold = -0.1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +40,8 @@ public class WeaponBob : MonoBehaviour
 
             transform.localPosition = Vector3.zero + Vector3.up * Mathf.Sin(sinY) * magnitude;
             transform.localPosition += Vector3.right * Mathf.Sin(sinX) * magnitude;
+
+            footStepHandle(velocity);
         }
 
         else
@@ -41,6 +50,32 @@ public class WeaponBob : MonoBehaviour
             transform.localPosition = Vector3.Lerp(transform.localPosition, Vector3.zero, Time.deltaTime);
         }
         lastPosition = transform.position;
+    }
+
+    void footStepHandle(float velocity)
+    {
+        if(velocity < 0.01f)
+        {
+            stepped = false;
+            return;
+        }
+
+        float bob = Mathf.Sin(sinY);
+
+        if (!stepped && bob <= stepThreshold)
+        {
+            PlayFootSteps();
+            stepped = true;
+        }
+        else if(bob > stepThreshold)
+        {
+            stepped = false;
+        }
+    }
+
+    void PlayFootSteps()
+    {
+        footStepSource.PlayOneShot(footstepsSound);
     }
 
 }
