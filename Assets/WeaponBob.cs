@@ -133,8 +133,12 @@ public class WeaponBob : MonoBehaviour
 
         for(int i = 0; i < terrainData.terrainLayers.Length; i++)
         {
-            maxWeight = splatmap[0, 0, i];
-            maxIndex = i;
+            if(splatmap[0,0,i] > maxWeight)
+            {
+                maxWeight = splatmap[0, 0, i];
+                maxIndex = i;
+            }
+            
         }
 
         return maxIndex;
