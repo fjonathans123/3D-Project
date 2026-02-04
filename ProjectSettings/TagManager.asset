@@ -15,6 +15,7 @@ TagManager:
   - enemyMelee
   - LoadingCanvas
   - Inventory
+  - Water
   layers:
   - Default
   - TransparentFX
