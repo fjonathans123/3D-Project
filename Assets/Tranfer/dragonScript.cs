@@ -207,7 +207,7 @@ public class dragonScript : MonoBehaviour
 
         if(DragonType == 0)
         {
-            hitbox.SetActive(false);
+            hitbox.SetActive(true);
         }
         else if (DragonType == 1)
         {
