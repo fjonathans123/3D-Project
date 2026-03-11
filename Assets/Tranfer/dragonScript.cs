@@ -34,8 +34,14 @@ public class dragonScript : MonoBehaviour
     public FreezeEffect freeze;
     public Enemydefeatscript defeat;
 
+    public bool isPhaseTwo = false;
+    public int damage;
+    private GameManager gm;
+    public bool isImmune = false; 
+
     private void Start()
     {
+        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         data = GameObject.FindGameObjectWithTag("stats").GetComponent<gameData>();
         elements = GameObject.FindGameObjectWithTag("Player").GetComponent<ElementController>();
         agent = GetComponent<NavMeshAgent>();
@@ -51,7 +57,7 @@ public class dragonScript : MonoBehaviour
         DragonHP -= damage;
         if (isHitting == true)
         {
-            if (DragonHP <= 0)
+            if (DragonHP <= 0 && isPhaseTwo && !isImmune)
             {
                 anim.SetTrigger("die");
                 GetComponent<Collider>().enabled = false;
@@ -65,7 +71,7 @@ public class dragonScript : MonoBehaviour
         }
         else
         {
-            if (DragonHP <= 0)
+            if (DragonHP <= 0 && isPhaseTwo && !isImmune)
             {
                 anim.SetTrigger("die");
                 GetComponent<Collider>().enabled = false;
@@ -74,6 +80,14 @@ public class dragonScript : MonoBehaviour
             }
             else
             {
+                if (!isPhaseTwo && DragonHP <= 0 && !isImmune)
+                {
+                    if (isPhaseTwo) return;
+                    isPhaseTwo = true;
+                    isImmune = true;
+                    DragonHP = 0;
+                    StartCoroutine(newPhaseTransistion());
+                }
                 anim.SetTrigger("damage");
                 if (elements.element == 1)
                 {
@@ -102,6 +116,16 @@ public class dragonScript : MonoBehaviour
             
         }
             }
+
+    IEnumerator newPhaseTransistion()
+    {
+        agent.isStopped = true;
+        Debug.Log("enter phase 2");
+
+        yield return new WaitForSeconds(3f);
+        DragonHP = 100;
+        agent.isStopped = true;
+    }
       
        void fireDPS()
     {

@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3b09b9d95f7e244942fb9be375fea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 6.5
+  attackRange: 20
   dragon: {fileID: 0}
   kroco: {fileID: 0}
 --- !u!114 &-4804003432138804556
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WaypointGameobject: Waypoint boss
-  chaseRange: 18
+  chaseRange: 30
 --- !u!1101 &-1744136778166777870
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a4061ff0dea904ba597142302fc935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseRange: 10
+  chaseRange: 30
 --- !u!1102 &-470819291319664220
 AnimatorState:
   serializedVersion: 6
@@ -571,8 +571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b5fd045166208848b40bf3ce47f79d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseRange: 20
-  attackRange: 6.5
+  chaseRange: 30
+  attackRange: 20
   chaseSpeed: 5
   rotationSpeed: 20
   climbMask:
