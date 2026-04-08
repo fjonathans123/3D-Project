@@ -66,6 +66,7 @@ public class Weaponswap : MonoBehaviour
                 {
                     weapon.gameObject.SetActive(true);
                     weapon.GetComponentInChildren<Renderer>().enabled = true;
+                    anim.SetInteger("weaponSelection", selectedweapon);
                 }
                 else
                 {

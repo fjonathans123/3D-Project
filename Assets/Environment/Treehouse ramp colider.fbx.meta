@@ -1,0 +1,1867 @@
+fileFormatVersion: 2
+guid: ea4f4856d302b7a4c951ea97dc69e0e1
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: -7758335229078592256
+    second: Railling.002|Cylinder.004Action.001
+  - first:
+      74: -2269181417445389863
+    second: Railling.002|Cylinder.004Action.002
+  - first:
+      74: 532144667939766856
+    second: Railling.002|Cylinder.004Action.003
+  - first:
+      74: -632172950873273003
+    second: Railling.002|Cylinder.004Action.004
+  - first:
+      74: 824065575037970530
+    second: Railling.002|Cylinder.004Action.005
+  - first:
+      74: -2843491804750691602
+    second: Railling.002|Cylinder.004Action.006
+  - first:
+      74: 113711807464705978
+    second: Railling.002|Cylinder.004Action.007
+  - first:
+      74: 8698820913521719671
+    second: Railling.002|Cylinder.004Action.008
+  - first:
+      74: 7131433203469984508
+    second: Railling.002|Cylinder.004Action.009
+  - first:
+      74: -6129850032460702789
+    second: Railling.002|Cylinder.004Action.010
+  - first:
+      74: 7216460521823936795
+    second: Railling.002|Cylinder.004Action.011
+  - first:
+      74: 7039545501830744455
+    second: Railling.002|Cylinder.004Action.012
+  - first:
+      74: 3697579451748288527
+    second: Railling.002|Cylinder.004Action.013
+  - first:
+      74: 3320702004411360369
+    second: Railling.002|Cylinder.004Action.014
+  - first:
+      74: -6072869521066269436
+    second: Railling.002|Cylinder.004Action.015
+  - first:
+      74: -8255635452130425083
+    second: Railling.002|Cylinder.004Action.016
+  - first:
+      74: -8791140482315473361
+    second: Railling.002|Cylinder.004Action.017
+  - first:
+      74: -8553362625949473378
+    second: Railling.002|Cylinder.004Action.018
+  - first:
+      74: 5824354526573361849
+    second: Railling.002|Cylinder.004Action.019
+  - first:
+      74: 83845811180259505
+    second: Railling.002|Cylinder.004Action.020
+  - first:
+      74: 4735821649763704063
+    second: Railling.002|Cylinder.004Action.021
+  - first:
+      74: 3871519463618789791
+    second: Railling.002|Cylinder.004Action.022
+  - first:
+      74: -3772109155503177863
+    second: Railling.002|Cylinder.004Action.023
+  - first:
+      74: 755847077884051874
+    second: Railling.002|Cylinder.004Action.024
+  - first:
+      74: 868455492288064148
+    second: Railling.002|Cylinder.004Action.025
+  - first:
+      74: 2966280656936787485
+    second: Railling.002|Cylinder.004Action.026
+  - first:
+      74: 7339042347477471070
+    second: Railling.002|Cylinder.004Action.027
+  - first:
+      74: 4074547710252976593
+    second: Railling.002|Cylinder.004Action.028
+  - first:
+      74: -2246604021050261348
+    second: Railling.002|Cylinder.004Action.029
+  - first:
+      74: -8770329053093518594
+    second: Railling.002|Cylinder.004Action.030
+  - first:
+      74: -4085014799360537589
+    second: Railling.002|Cylinder.004Action.031
+  - first:
+      74: 5817568796472243464
+    second: Railling.002|Cylinder.004Action.032
+  - first:
+      74: 8061960054418583321
+    second: Railling.005|Cylinder.004Action.001
+  - first:
+      74: -5711268638034966682
+    second: Railling.005|Cylinder.004Action.002
+  - first:
+      74: -7940580752713454297
+    second: Railling.005|Cylinder.004Action.003
+  - first:
+      74: 7862583893083312727
+    second: Railling.005|Cylinder.004Action.004
+  - first:
+      74: -7262285987350508351
+    second: Railling.005|Cylinder.004Action.005
+  - first:
+      74: 6072695642688099018
+    second: Railling.005|Cylinder.004Action.006
+  - first:
+      74: 8035264422495773953
+    second: Railling.005|Cylinder.004Action.007
+  - first:
+      74: -9213705513281189111
+    second: Railling.005|Cylinder.004Action.008
+  - first:
+      74: -1209305039407152346
+    second: Railling.005|Cylinder.004Action.009
+  - first:
+      74: -9062849563744706095
+    second: Railling.005|Cylinder.004Action.010
+  - first:
+      74: -1398573365336339278
+    second: Railling.005|Cylinder.004Action.011
+  - first:
+      74: 997071076775199803
+    second: Railling.005|Cylinder.004Action.012
+  - first:
+      74: 4768671777806773570
+    second: Railling.005|Cylinder.004Action.013
+  - first:
+      74: -2405654187876824481
+    second: Railling.005|Cylinder.004Action.014
+  - first:
+      74: 401258904912458352
+    second: Railling.005|Cylinder.004Action.015
+  - first:
+      74: -1812787902041359887
+    second: Railling.005|Cylinder.004Action.016
+  - first:
+      74: 7855051202519842109
+    second: Railling.005|Cylinder.004Action.017
+  - first:
+      74: -2225375442676300528
+    second: Railling.005|Cylinder.004Action.018
+  - first:
+      74: 3154739809951986951
+    second: Railling.005|Cylinder.004Action.019
+  - first:
+      74: 8094446812574255134
+    second: Railling.005|Cylinder.004Action.020
+  - first:
+      74: -7573913338883033052
+    second: Railling.005|Cylinder.004Action.021
+  - first:
+      74: 8755718416961702461
+    second: Railling.005|Cylinder.004Action.022
+  - first:
+      74: 5808443764096037045
+    second: Railling.005|Cylinder.004Action.023
+  - first:
+      74: 3630324403131158331
+    second: Railling.005|Cylinder.004Action.024
+  - first:
+      74: -3561324518256810370
+    second: Railling.005|Cylinder.004Action.025
+  - first:
+      74: -7912025145548463357
+    second: Railling.005|Cylinder.004Action.026
+  - first:
+      74: -5100007763355258558
+    second: Railling.005|Cylinder.004Action.027
+  - first:
+      74: -3303885233511070282
+    second: Railling.005|Cylinder.004Action.028
+  - first:
+      74: 1824350254806278295
+    second: Railling.005|Cylinder.004Action.029
+  - first:
+      74: -3028213972002546657
+    second: Railling.005|Cylinder.004Action.030
+  - first:
+      74: -5865186291963400014
+    second: Railling.005|Cylinder.004Action.031
+  - first:
+      74: -8698822411987894139
+    second: Railling.005|Cylinder.004Action.032
+  - first:
+      74: -2277533102514835878
+    second: Railling.006|Cylinder.004Action.001
+  - first:
+      74: 6820789666030677803
+    second: Railling.006|Cylinder.004Action.002
+  - first:
+      74: 537392081894305992
+    second: Railling.006|Cylinder.004Action.003
+  - first:
+      74: 5302411842229924564
+    second: Railling.006|Cylinder.004Action.004
+  - first:
+      74: 3123376225931658454
+    second: Railling.006|Cylinder.004Action.005
+  - first:
+      74: 102563918043457989
+    second: Railling.006|Cylinder.004Action.006
+  - first:
+      74: 2056764479821531787
+    second: Railling.006|Cylinder.004Action.007
+  - first:
+      74: 3646519446614548600
+    second: Railling.006|Cylinder.004Action.008
+  - first:
+      74: 887954929032740574
+    second: Railling.006|Cylinder.004Action.009
+  - first:
+      74: 348997542782058777
+    second: Railling.006|Cylinder.004Action.010
+  - first:
+      74: 1271494066322748670
+    second: Railling.006|Cylinder.004Action.011
+  - first:
+      74: 3535543443457339122
+    second: Railling.006|Cylinder.004Action.012
+  - first:
+      74: 1287831267752824347
+    second: Railling.006|Cylinder.004Action.013
+  - first:
+      74: -7957232680727266857
+    second: Railling.006|Cylinder.004Action.014
+  - first:
+      74: -5531835889243677177
+    second: Railling.006|Cylinder.004Action.015
+  - first:
+      74: -1288346232605552825
+    second: Railling.006|Cylinder.004Action.016
+  - first:
+      74: -389571832169408210
+    second: Railling.006|Cylinder.004Action.017
+  - first:
+      74: -4738951211596528082
+    second: Railling.006|Cylinder.004Action.018
+  - first:
+      74: 8277102331458696338
+    second: Railling.006|Cylinder.004Action.019
+  - first:
+      74: -3001841832369349720
+    second: Railling.006|Cylinder.004Action.020
+  - first:
+      74: -3387146182805836617
+    second: Railling.006|Cylinder.004Action.021
+  - first:
+      74: -3209859742545127620
+    second: Railling.006|Cylinder.004Action.022
+  - first:
+      74: 2903344082526576086
+    second: Railling.006|Cylinder.004Action.023
+  - first:
+      74: -7401298007157700602
+    second: Railling.006|Cylinder.004Action.024
+  - first:
+      74: 6313693722989365234
+    second: Railling.006|Cylinder.004Action.025
+  - first:
+      74: -3278699114778462608
+    second: Railling.006|Cylinder.004Action.026
+  - first:
+      74: 1899843417579019947
+    second: Railling.006|Cylinder.004Action.027
+  - first:
+      74: -8757202413194943434
+    second: Railling.006|Cylinder.004Action.028
+  - first:
+      74: 4706001185741915504
+    second: Railling.006|Cylinder.004Action.029
+  - first:
+      74: -7994925079198303157
+    second: Railling.006|Cylinder.004Action.030
+  - first:
+      74: 4360770493087510968
+    second: Railling.006|Cylinder.004Action.031
+  - first:
+      74: -8247237210176958243
+    second: Railling.006|Cylinder.004Action.032
+  - first:
+      74: -442042029799320079
+    second: Railling.007|Cylinder.004Action.001
+  - first:
+      74: -492031334090509651
+    second: Railling.007|Cylinder.004Action.002
+  - first:
+      74: -8942312029290093019
+    second: Railling.007|Cylinder.004Action.003
+  - first:
+      74: 5821011976614787508
+    second: Railling.007|Cylinder.004Action.004
+  - first:
+      74: -7953299794996195028
+    second: Railling.007|Cylinder.004Action.005
+  - first:
+      74: 858981097466648553
+    second: Railling.007|Cylinder.004Action.006
+  - first:
+      74: -6217080926790250969
+    second: Railling.007|Cylinder.004Action.007
+  - first:
+      74: -7207283534545508558
+    second: Railling.007|Cylinder.004Action.008
+  - first:
+      74: 6077760619875311432
+    second: Railling.007|Cylinder.004Action.009
+  - first:
+      74: 4665903416845010170
+    second: Railling.007|Cylinder.004Action.010
+  - first:
+      74: -2183825855884324328
+    second: Railling.007|Cylinder.004Action.011
+  - first:
+      74: 3031458947258178079
+    second: Railling.007|Cylinder.004Action.012
+  - first:
+      74: -5201648091577155144
+    second: Railling.007|Cylinder.004Action.013
+  - first:
+      74: -764157620062022049
+    second: Railling.007|Cylinder.004Action.014
+  - first:
+      74: -3166329262268343765
+    second: Railling.007|Cylinder.004Action.015
+  - first:
+      74: 5276595414133674601
+    second: Railling.007|Cylinder.004Action.016
+  - first:
+      74: -5659358740143048667
+    second: Railling.007|Cylinder.004Action.017
+  - first:
+      74: -6019022241536003660
+    second: Railling.007|Cylinder.004Action.018
+  - first:
+      74: -5720087552098522358
+    second: Railling.007|Cylinder.004Action.019
+  - first:
+      74: -29822087410211426
+    second: Railling.007|Cylinder.004Action.020
+  - first:
+      74: -2565293270391681787
+    second: Railling.007|Cylinder.004Action.021
+  - first:
+      74: 6932094912440750798
+    second: Railling.007|Cylinder.004Action.022
+  - first:
+      74: -8760071651272004577
+    second: Railling.007|Cylinder.004Action.023
+  - first:
+      74: 5803396987855911783
+    second: Railling.007|Cylinder.004Action.024
+  - first:
+      74: -6829756036695797370
+    second: Railling.007|Cylinder.004Action.025
+  - first:
+      74: -7387571441036893508
+    second: Railling.007|Cylinder.004Action.026
+  - first:
+      74: 4071795183745647017
+    second: Railling.007|Cylinder.004Action.027
+  - first:
+      74: 6501720866336108731
+    second: Railling.007|Cylinder.004Action.028
+  - first:
+      74: 2287128829149055537
+    second: Railling.007|Cylinder.004Action.029
+  - first:
+      74: -8502394599750082322
+    second: Railling.007|Cylinder.004Action.030
+  - first:
+      74: 6110941456391846705
+    second: Railling.007|Cylinder.004Action.031
+  - first:
+      74: 8096833679973743327
+    second: Railling.007|Cylinder.004Action.032
+  - first:
+      74: 6094992761428856867
+    second: Railling.008|Cylinder.004Action.001
+  - first:
+      74: -2285858152517456026
+    second: Railling.008|Cylinder.004Action.002
+  - first:
+      74: -6376303191194435306
+    second: Railling.008|Cylinder.004Action.003
+  - first:
+      74: 8274184298601392374
+    second: Railling.008|Cylinder.004Action.004
+  - first:
+      74: 4862117426560944850
+    second: Railling.008|Cylinder.004Action.005
+  - first:
+      74: -7053055370398333775
+    second: Railling.008|Cylinder.004Action.006
+  - first:
+      74: 6124522775895886958
+    second: Railling.008|Cylinder.004Action.007
+  - first:
+      74: 493158434557759277
+    second: Railling.008|Cylinder.004Action.008
+  - first:
+      74: 3716513939881452439
+    second: Railling.008|Cylinder.004Action.009
+  - first:
+      74: -915625814140955753
+    second: Railling.008|Cylinder.004Action.010
+  - first:
+      74: -8839991784698442749
+    second: Railling.008|Cylinder.004Action.011
+  - first:
+      74: 1200406705418890836
+    second: Railling.008|Cylinder.004Action.012
+  - first:
+      74: -5927373633500019524
+    second: Railling.008|Cylinder.004Action.013
+  - first:
+      74: -4877342527219563046
+    second: Railling.008|Cylinder.004Action.014
+  - first:
+      74: 6453614840517984112
+    second: Railling.008|Cylinder.004Action.015
+  - first:
+      74: 5888877963336369327
+    second: Railling.008|Cylinder.004Action.016
+  - first:
+      74: -1602032632328745236
+    second: Railling.008|Cylinder.004Action.017
+  - first:
+      74: 4684285556374798337
+    second: Railling.008|Cylinder.004Action.018
+  - first:
+      74: 157965705157710748
+    second: Railling.008|Cylinder.004Action.019
+  - first:
+      74: 3689096193215939257
+    second: Railling.008|Cylinder.004Action.020
+  - first:
+      74: 6645052580900122359
+    second: Railling.008|Cylinder.004Action.021
+  - first:
+      74: -5109415244159854155
+    second: Railling.008|Cylinder.004Action.022
+  - first:
+      74: -8643436467393383586
+    second: Railling.008|Cylinder.004Action.023
+  - first:
+      74: 1332344465061601191
+    second: Railling.008|Cylinder.004Action.024
+  - first:
+      74: 7880410584138850600
+    second: Railling.008|Cylinder.004Action.025
+  - first:
+      74: 8784389063956199526
+    second: Railling.008|Cylinder.004Action.026
+  - first:
+      74: -6625031384618533047
+    second: Railling.008|Cylinder.004Action.027
+  - first:
+      74: -567799501080365297
+    second: Railling.008|Cylinder.004Action.028
+  - first:
+      74: 1296125661001931544
+    second: Railling.008|Cylinder.004Action.029
+  - first:
+      74: 1944604869438272981
+    second: Railling.008|Cylinder.004Action.030
+  - first:
+      74: -7068182332878222610
+    second: Railling.008|Cylinder.004Action.031
+  - first:
+      74: -6446364214690905438
+    second: Railling.008|Cylinder.004Action.032
+  - first:
+      74: -6701276789228797955
+    second: Wall Lantai2|Cylinder.004Action.001
+  - first:
+      74: 4278146858441405696
+    second: Wall Lantai2|Cylinder.004Action.002
+  - first:
+      74: 8419495866201496737
+    second: Wall Lantai2|Cylinder.004Action.003
+  - first:
+      74: 2869315544803043321
+    second: Wall Lantai2|Cylinder.004Action.004
+  - first:
+      74: 5371936740054856063
+    second: Wall Lantai2|Cylinder.004Action.005
+  - first:
+      74: 7073349533074954816
+    second: Wall Lantai2|Cylinder.004Action.006
+  - first:
+      74: -8010323927184091646
+    second: Wall Lantai2|Cylinder.004Action.007
+  - first:
+      74: -380962590261607701
+    second: Wall Lantai2|Cylinder.004Action.008
+  - first:
+      74: 4401860328271790570
+    second: Wall Lantai2|Cylinder.004Action.009
+  - first:
+      74: -8221656070175546547
+    second: Wall Lantai2|Cylinder.004Action.010
+  - first:
+      74: -2985897050405020658
+    second: Wall Lantai2|Cylinder.004Action.011
+  - first:
+      74: -8640074120007508625
+    second: Wall Lantai2|Cylinder.004Action.012
+  - first:
+      74: -1338961362366628031
+    second: Wall Lantai2|Cylinder.004Action.013
+  - first:
+      74: -3445099920783928729
+    second: Wall Lantai2|Cylinder.004Action.014
+  - first:
+      74: -2030268965698096123
+    second: Wall Lantai2|Cylinder.004Action.015
+  - first:
+      74: -8927650155077887347
+    second: Wall Lantai2|Cylinder.004Action.016
+  - first:
+      74: 5505314616198707532
+    second: Wall Lantai2|Cylinder.004Action.017
+  - first:
+      74: -9216417390347047196
+    second: Wall Lantai2|Cylinder.004Action.018
+  - first:
+      74: -648710210212074596
+    second: Wall Lantai2|Cylinder.004Action.019
+  - first:
+      74: 4550649906791196340
+    second: Wall Lantai2|Cylinder.004Action.020
+  - first:
+      74: -8640345535664298328
+    second: Wall Lantai2|Cylinder.004Action.021
+  - first:
+      74: -8709186767398998088
+    second: Wall Lantai2|Cylinder.004Action.022
+  - first:
+      74: 6512551780609336116
+    second: Wall Lantai2|Cylinder.004Action.023
+  - first:
+      74: -8638922261725642625
+    second: Wall Lantai2|Cylinder.004Action.024
+  - first:
+      74: -2467753003771679283
+    second: Wall Lantai2|Cylinder.004Action.025
+  - first:
+      74: -5966431116468394903
+    second: Wall Lantai2|Cylinder.004Action.026
+  - first:
+      74: -4720186789580774397
+    second: Wall Lantai2|Cylinder.004Action.027
+  - first:
+      74: -7343300935304229974
+    second: Wall Lantai2|Cylinder.004Action.028
+  - first:
+      74: 4139181783384219439
+    second: Wall Lantai2|Cylinder.004Action.029
+  - first:
+      74: 6665927118053290919
+    second: Wall Lantai2|Cylinder.004Action.030
+  - first:
+      74: 5719188524519668351
+    second: Wall Lantai2|Cylinder.004Action.031
+  - first:
+      74: -4719184811003491695
+    second: Wall Lantai2|Cylinder.004Action.032
+  - first:
+      74: 4965236121471860300
+    second: Wall Lantai2.002|Cylinder.004Action.001
+  - first:
+      74: 6058992392524213548
+    second: Wall Lantai2.002|Cylinder.004Action.002
+  - first:
+      74: 2159781854090427804
+    second: Wall Lantai2.002|Cylinder.004Action.003
+  - first:
+      74: -6266464722460199297
+    second: Wall Lantai2.002|Cylinder.004Action.004
+  - first:
+      74: 2968926603223895014
+    second: Wall Lantai2.002|Cylinder.004Action.005
+  - first:
+      74: 7860183038288458939
+    second: Wall Lantai2.002|Cylinder.004Action.006
+  - first:
+      74: 1392799026739706319
+    second: Wall Lantai2.002|Cylinder.004Action.007
+  - first:
+      74: -5815245842961995510
+    second: Wall Lantai2.002|Cylinder.004Action.008
+  - first:
+      74: 4164381972418370736
+    second: Wall Lantai2.002|Cylinder.004Action.009
+  - first:
+      74: 8187865404937648785
+    second: Wall Lantai2.002|Cylinder.004Action.010
+  - first:
+      74: -4485744644469130319
+    second: Wall Lantai2.002|Cylinder.004Action.011
+  - first:
+      74: -215764492167774136
+    second: Wall Lantai2.002|Cylinder.004Action.012
+  - first:
+      74: -7432145245605914512
+    second: Wall Lantai2.002|Cylinder.004Action.013
+  - first:
+      74: -7573694043205947395
+    second: Wall Lantai2.002|Cylinder.004Action.014
+  - first:
+      74: -1194126176671629988
+    second: Wall Lantai2.002|Cylinder.004Action.015
+  - first:
+      74: -2093959111456193373
+    second: Wall Lantai2.002|Cylinder.004Action.016
+  - first:
+      74: 3858933274732725834
+    second: Wall Lantai2.002|Cylinder.004Action.017
+  - first:
+      74: -8648010457647278593
+    second: Wall Lantai2.002|Cylinder.004Action.018
+  - first:
+      74: 4505494551149969811
+    second: Wall Lantai2.002|Cylinder.004Action.019
+  - first:
+      74: 8500233127422873323
+    second: Wall Lantai2.002|Cylinder.004Action.020
+  - first:
+      74: -6533566710802382461
+    second: Wall Lantai2.002|Cylinder.004Action.021
+  - first:
+      74: -2577640094744202935
+    second: Wall Lantai2.002|Cylinder.004Action.022
+  - first:
+      74: 1758158151204684353
+    second: Wall Lantai2.002|Cylinder.004Action.023
+  - first:
+      74: -8864463958656255943
+    second: Wall Lantai2.002|Cylinder.004Action.024
+  - first:
+      74: -831430716378742683
+    second: Wall Lantai2.002|Cylinder.004Action.025
+  - first:
+      74: -8121214495735438255
+    second: Wall Lantai2.002|Cylinder.004Action.026
+  - first:
+      74: -117323782490919421
+    second: Wall Lantai2.002|Cylinder.004Action.027
+  - first:
+      74: 4966728762612154239
+    second: Wall Lantai2.002|Cylinder.004Action.028
+  - first:
+      74: -8507110601131581328
+    second: Wall Lantai2.002|Cylinder.004Action.029
+  - first:
+      74: -186589560578871081
+    second: Wall Lantai2.002|Cylinder.004Action.030
+  - first:
+      74: 1834686015672086838
+    second: Wall Lantai2.002|Cylinder.004Action.031
+  - first:
+      74: 3416063343274135731
+    second: Wall Lantai2.002|Cylinder.004Action.032
+  - first:
+      74: 3440494222535572483
+    second: Bushes|Cylinder.004Action.013
+  - first:
+      74: -297852753687677447
+    second: Pillars|Cylinder.004Action.015
+  - first:
+      74: 8725283180383426691
+    second: Roof Lantai 2|Cylinder.004Action.001
+  - first:
+      74: 5686554538026456568
+    second: Roof Lantai 2|Cylinder.004Action.002
+  - first:
+      74: -8680361274766520447
+    second: Roof Lantai 2|Cylinder.004Action.003
+  - first:
+      74: -6298386475364123142
+    second: Roof Lantai 2|Cylinder.004Action.004
+  - first:
+      74: -12704443799029763
+    second: Roof Lantai 2|Cylinder.004Action.005
+  - first:
+      74: 6992437415528190320
+    second: Roof Lantai 2|Cylinder.004Action.006
+  - first:
+      74: 4097164690833534546
+    second: Roof Lantai 2|Cylinder.004Action.007
+  - first:
+      74: -3946011752112969158
+    second: Roof Lantai 2|Cylinder.004Action.008
+  - first:
+      74: 8542472773519493596
+    second: Roof Lantai 2|Cylinder.004Action.009
+  - first:
+      74: -6522877207601475172
+    second: Roof Lantai 2|Cylinder.004Action.010
+  - first:
+      74: 6059491483687269959
+    second: Roof Lantai 2|Cylinder.004Action.011
+  - first:
+      74: -4054924953147978123
+    second: Roof Lantai 2|Cylinder.004Action.012
+  - first:
+      74: -2780028643603756902
+    second: Roof Lantai 2|Cylinder.004Action.013
+  - first:
+      74: 1573312078127730356
+    second: Roof Lantai 2|Cylinder.004Action.014
+  - first:
+      74: 6070221962010969268
+    second: Roof Lantai 2|Cylinder.004Action.015
+  - first:
+      74: 2261787303127643388
+    second: Roof Lantai 2|Cylinder.004Action.016
+  - first:
+      74: -8640330372849153566
+    second: Roof Lantai 2|Cylinder.004Action.017
+  - first:
+      74: 1949199260890964462
+    second: Roof Lantai 2|Cylinder.004Action.018
+  - first:
+      74: -8761940042499089490
+    second: Roof Lantai 2|Cylinder.004Action.019
+  - first:
+      74: -3912253196984415613
+    second: Roof Lantai 2|Cylinder.004Action.020
+  - first:
+      74: -1768738452591942949
+    second: Roof Lantai 2|Cylinder.004Action.021
+  - first:
+      74: 8989426064021406846
+    second: Roof Lantai 2|Cylinder.004Action.022
+  - first:
+      74: 1012243392225750751
+    second: Roof Lantai 2|Cylinder.004Action.023
+  - first:
+      74: 7100739457247849586
+    second: Roof Lantai 2|Cylinder.004Action.024
+  - first:
+      74: 736205428951429504
+    second: Roof Lantai 2|Cylinder.004Action.025
+  - first:
+      74: 4139761270720162422
+    second: Roof Lantai 2|Cylinder.004Action.026
+  - first:
+      74: 5520035007486043565
+    second: Roof Lantai 2|Cylinder.004Action.027
+  - first:
+      74: 8348919596293273040
+    second: Roof Lantai 2|Cylinder.004Action.028
+  - first:
+      74: -3789684949510536862
+    second: Roof Lantai 2|Cylinder.004Action.029
+  - first:
+      74: 7015968115279420279
+    second: Roof Lantai 2|Cylinder.004Action.030
+  - first:
+      74: -1170866634215858350
+    second: Roof Lantai 2|Cylinder.004Action.031
+  - first:
+      74: 3836209841879166967
+    second: Roof Lantai 2|Cylinder.004Action.032
+  - first:
+      74: -452868349017908769
+    second: Railling|Cylinder.004Action.001
+  - first:
+      74: -1910830565061066502
+    second: Railling|Cylinder.004Action.002
+  - first:
+      74: -1815025609918224784
+    second: Railling|Cylinder.004Action.003
+  - first:
+      74: -7729789074394217484
+    second: Railling|Cylinder.004Action.004
+  - first:
+      74: -7300967265333220969
+    second: Railling|Cylinder.004Action.005
+  - first:
+      74: -7754622933074837463
+    second: Railling|Cylinder.004Action.006
+  - first:
+      74: -7073642902277564588
+    second: Railling|Cylinder.004Action.007
+  - first:
+      74: 8173634788587188915
+    second: Railling|Cylinder.004Action.008
+  - first:
+      74: 665632516329232337
+    second: Railling|Cylinder.004Action.009
+  - first:
+      74: 981859412676589307
+    second: Railling|Cylinder.004Action.010
+  - first:
+      74: -7617747086271062323
+    second: Railling|Cylinder.004Action.011
+  - first:
+      74: -6089854615249528784
+    second: Railling|Cylinder.004Action.012
+  - first:
+      74: -7025047781560059682
+    second: Railling|Cylinder.004Action.013
+  - first:
+      74: 3755185354433925930
+    second: Railling|Cylinder.004Action.014
+  - first:
+      74: -3130516122867009095
+    second: Railling|Cylinder.004Action.015
+  - first:
+      74: -829940122866875151
+    second: Railling|Cylinder.004Action.016
+  - first:
+      74: 4157942316817806179
+    second: Railling|Cylinder.004Action.017
+  - first:
+      74: 6689393923720614812
+    second: Railling|Cylinder.004Action.018
+  - first:
+      74: 7224238898707146505
+    second: Railling|Cylinder.004Action.019
+  - first:
+      74: -8393075006161638606
+    second: Railling|Cylinder.004Action.020
+  - first:
+      74: 1973991894663154435
+    second: Railling|Cylinder.004Action.021
+  - first:
+      74: 4498625461953636809
+    second: Railling|Cylinder.004Action.022
+  - first:
+      74: -8918201756799572781
+    second: Railling|Cylinder.004Action.023
+  - first:
+      74: -108272924016911992
+    second: Railling|Cylinder.004Action.024
+  - first:
+      74: -7982153506143427728
+    second: Railling|Cylinder.004Action.025
+  - first:
+      74: -2246250017176313159
+    second: Railling|Cylinder.004Action.026
+  - first:
+      74: 5490613067547650257
+    second: Railling|Cylinder.004Action.027
+  - first:
+      74: 987236559600850495
+    second: Railling|Cylinder.004Action.028
+  - first:
+      74: 8433385440324520717
+    second: Railling|Cylinder.004Action.029
+  - first:
+      74: -7368861742646554363
+    second: Railling|Cylinder.004Action.030
+  - first:
+      74: 5234761185525881387
+    second: Railling|Cylinder.004Action.031
+  - first:
+      74: -1798261318489989234
+    second: Railling|Cylinder.004Action.032
+  - first:
+      74: 8671723817548198831
+    second: Floor Lantai2|Cylinder.004Action.001
+  - first:
+      74: -5467718479177370488
+    second: Floor Lantai2|Cylinder.004Action.002
+  - first:
+      74: -2608322279323151109
+    second: Floor Lantai2|Cylinder.004Action.003
+  - first:
+      74: -6760871195496234669
+    second: Floor Lantai2|Cylinder.004Action.004
+  - first:
+      74: 8972418865584176781
+    second: Floor Lantai2|Cylinder.004Action.005
+  - first:
+      74: -5292498828292203473
+    second: Floor Lantai2|Cylinder.004Action.006
+  - first:
+      74: 7908869341216809132
+    second: Floor Lantai2|Cylinder.004Action.007
+  - first:
+      74: 5609309460325105372
+    second: Floor Lantai2|Cylinder.004Action.008
+  - first:
+      74: -5223103234113185027
+    second: Floor Lantai2|Cylinder.004Action.009
+  - first:
+      74: 4312356019278203124
+    second: Floor Lantai2|Cylinder.004Action.010
+  - first:
+      74: 5935234736876643854
+    second: Floor Lantai2|Cylinder.004Action.011
+  - first:
+      74: -1169130252614248794
+    second: Floor Lantai2|Cylinder.004Action.012
+  - first:
+      74: 3569051483692125134
+    second: Floor Lantai2|Cylinder.004Action.013
+  - first:
+      74: 220925915088929628
+    second: Floor Lantai2|Cylinder.004Action.014
+  - first:
+      74: 556947262510634864
+    second: Floor Lantai2|Cylinder.004Action.015
+  - first:
+      74: -4474534531738418711
+    second: Floor Lantai2|Cylinder.004Action.016
+  - first:
+      74: 967516461779754273
+    second: Floor Lantai2|Cylinder.004Action.017
+  - first:
+      74: 7541803454983441213
+    second: Floor Lantai2|Cylinder.004Action.018
+  - first:
+      74: 293450171857724349
+    second: Floor Lantai2|Cylinder.004Action.019
+  - first:
+      74: 2352063835136644940
+    second: Floor Lantai2|Cylinder.004Action.020
+  - first:
+      74: -5421019218764629175
+    second: Floor Lantai2|Cylinder.004Action.021
+  - first:
+      74: -3239223088284167461
+    second: Floor Lantai2|Cylinder.004Action.022
+  - first:
+      74: -4505487387586519804
+    second: Floor Lantai2|Cylinder.004Action.023
+  - first:
+      74: -3771216235876080082
+    second: Floor Lantai2|Cylinder.004Action.024
+  - first:
+      74: -3500420723588270855
+    second: Floor Lantai2|Cylinder.004Action.025
+  - first:
+      74: -1591209882192946252
+    second: Floor Lantai2|Cylinder.004Action.026
+  - first:
+      74: 5684225028256796320
+    second: Floor Lantai2|Cylinder.004Action.027
+  - first:
+      74: -7630398865548997279
+    second: Floor Lantai2|Cylinder.004Action.028
+  - first:
+      74: -4565437877509350540
+    second: Floor Lantai2|Cylinder.004Action.029
+  - first:
+      74: 7127822080319478122
+    second: Floor Lantai2|Cylinder.004Action.030
+  - first:
+      74: -8519663665182329966
+    second: Floor Lantai2|Cylinder.004Action.031
+  - first:
+      74: 7465906141208079722
+    second: Floor Lantai2|Cylinder.004Action.032
+  - first:
+      74: 4513508594127059510
+    second: Wall Lantai 1|Cylinder.004Action.001
+  - first:
+      74: 2531634740887964384
+    second: Wall Lantai 1|Cylinder.004Action.002
+  - first:
+      74: 6001230188204090488
+    second: Wall Lantai 1|Cylinder.004Action.003
+  - first:
+      74: 8327670739267781195
+    second: Wall Lantai 1|Cylinder.004Action.004
+  - first:
+      74: -2450743625355496271
+    second: Wall Lantai 1|Cylinder.004Action.005
+  - first:
+      74: 3502624768613529844
+    second: Wall Lantai 1|Cylinder.004Action.006
+  - first:
+      74: 1925991556894300244
+    second: Wall Lantai 1|Cylinder.004Action.007
+  - first:
+      74: 1472710210821312078
+    second: Wall Lantai 1|Cylinder.004Action.008
+  - first:
+      74: 212350602638913003
+    second: Wall Lantai 1|Cylinder.004Action.009
+  - first:
+      74: 6068123778210052146
+    second: Wall Lantai 1|Cylinder.004Action.010
+  - first:
+      74: 7762758828361739379
+    second: Wall Lantai 1|Cylinder.004Action.011
+  - first:
+      74: -6166810429968059180
+    second: Wall Lantai 1|Cylinder.004Action.012
+  - first:
+      74: -1257178310167446472
+    second: Wall Lantai 1|Cylinder.004Action.013
+  - first:
+      74: 3443178369962952275
+    second: Wall Lantai 1|Cylinder.004Action.014
+  - first:
+      74: -4349396757821369292
+    second: Wall Lantai 1|Cylinder.004Action.015
+  - first:
+      74: 8205976628713896858
+    second: Wall Lantai 1|Cylinder.004Action.016
+  - first:
+      74: -2712117940981099395
+    second: Wall Lantai 1|Cylinder.004Action.017
+  - first:
+      74: 2288514858955624531
+    second: Wall Lantai 1|Cylinder.004Action.018
+  - first:
+      74: -7488637559567701527
+    second: Wall Lantai 1|Cylinder.004Action.019
+  - first:
+      74: 5261428688013855332
+    second: Wall Lantai 1|Cylinder.004Action.020
+  - first:
+      74: 1288228591294321320
+    second: Wall Lantai 1|Cylinder.004Action.021
+  - first:
+      74: 4494001514845183588
+    second: Wall Lantai 1|Cylinder.004Action.022
+  - first:
+      74: -6235944598921933608
+    second: Wall Lantai 1|Cylinder.004Action.023
+  - first:
+      74: -1628314679722283740
+    second: Wall Lantai 1|Cylinder.004Action.024
+  - first:
+      74: 334463908428982464
+    second: Wall Lantai 1|Cylinder.004Action.025
+  - first:
+      74: -6261462845999074297
+    second: Wall Lantai 1|Cylinder.004Action.026
+  - first:
+      74: 1129849307253640281
+    second: Wall Lantai 1|Cylinder.004Action.027
+  - first:
+      74: 5141894649780275665
+    second: Wall Lantai 1|Cylinder.004Action.028
+  - first:
+      74: -5152260947212415125
+    second: Wall Lantai 1|Cylinder.004Action.029
+  - first:
+      74: -3205952341372507470
+    second: Wall Lantai 1|Cylinder.004Action.030
+  - first:
+      74: 3644702863004739773
+    second: Wall Lantai 1|Cylinder.004Action.031
+  - first:
+      74: -5968565546184792588
+    second: Wall Lantai 1|Cylinder.004Action.032
+  - first:
+      74: 970064175245894139
+    second: Roof Lantai 1|Cylinder.004Action.001
+  - first:
+      74: 7794561834950084710
+    second: Roof Lantai 1|Cylinder.004Action.002
+  - first:
+      74: -4515875383145903305
+    second: Roof Lantai 1|Cylinder.004Action.003
+  - first:
+      74: -2963685723409277606
+    second: Roof Lantai 1|Cylinder.004Action.004
+  - first:
+      74: 2201528242115954254
+    second: Roof Lantai 1|Cylinder.004Action.005
+  - first:
+      74: 6954678489848679498
+    second: Roof Lantai 1|Cylinder.004Action.006
+  - first:
+      74: 7465409932029463393
+    second: Roof Lantai 1|Cylinder.004Action.007
+  - first:
+      74: 7887598128836599722
+    second: Roof Lantai 1|Cylinder.004Action.008
+  - first:
+      74: -1396785485183229715
+    second: Roof Lantai 1|Cylinder.004Action.009
+  - first:
+      74: -515572670709750954
+    second: Roof Lantai 1|Cylinder.004Action.010
+  - first:
+      74: 7797299361483558649
+    second: Roof Lantai 1|Cylinder.004Action.011
+  - first:
+      74: -1975121446780534856
+    second: Roof Lantai 1|Cylinder.004Action.012
+  - first:
+      74: -2807871286795263896
+    second: Roof Lantai 1|Cylinder.004Action.013
+  - first:
+      74: 2984321588662856256
+    second: Roof Lantai 1|Cylinder.004Action.014
+  - first:
+      74: 7817212418358465657
+    second: Roof Lantai 1|Cylinder.004Action.015
+  - first:
+      74: -3127732403487277745
+    second: Roof Lantai 1|Cylinder.004Action.016
+  - first:
+      74: -6499483381796792416
+    second: Roof Lantai 1|Cylinder.004Action.017
+  - first:
+      74: -7354069748009434543
+    second: Roof Lantai 1|Cylinder.004Action.018
+  - first:
+      74: -7315144783329580534
+    second: Roof Lantai 1|Cylinder.004Action.019
+  - first:
+      74: -3573624739727708148
+    second: Roof Lantai 1|Cylinder.004Action.020
+  - first:
+      74: 527601628123462880
+    second: Roof Lantai 1|Cylinder.004Action.021
+  - first:
+      74: -6737641437455376236
+    second: Roof Lantai 1|Cylinder.004Action.022
+  - first:
+      74: 402411034251094526
+    second: Roof Lantai 1|Cylinder.004Action.023
+  - first:
+      74: 1862122021415009739
+    second: Roof Lantai 1|Cylinder.004Action.024
+  - first:
+      74: -5962958724078251431
+    second: Roof Lantai 1|Cylinder.004Action.025
+  - first:
+      74: -8638004773244581804
+    second: Roof Lantai 1|Cylinder.004Action.026
+  - first:
+      74: -7167844506527849181
+    second: Roof Lantai 1|Cylinder.004Action.027
+  - first:
+      74: -7068737227815199503
+    second: Roof Lantai 1|Cylinder.004Action.028
+  - first:
+      74: -499269804782287232
+    second: Roof Lantai 1|Cylinder.004Action.029
+  - first:
+      74: 7726551938231624714
+    second: Roof Lantai 1|Cylinder.004Action.030
+  - first:
+      74: -6453906235753807773
+    second: Roof Lantai 1|Cylinder.004Action.031
+  - first:
+      74: -5904250223719902660
+    second: Roof Lantai 1|Cylinder.004Action.032
+  - first:
+      74: -7154249549668791183
+    second: Bushes.001|Cylinder.004Action.002
+  - first:
+      74: -115427551423660940
+    second: Railling.009|Cylinder.004Action.001
+  - first:
+      74: -4055219329235638851
+    second: Railling.009|Cylinder.004Action.002
+  - first:
+      74: -7895592731232026698
+    second: Railling.009|Cylinder.004Action.003
+  - first:
+      74: 6321017468532308200
+    second: Railling.009|Cylinder.004Action.004
+  - first:
+      74: 7544998156597547291
+    second: Railling.009|Cylinder.004Action.005
+  - first:
+      74: -4044122943188562773
+    second: Railling.009|Cylinder.004Action.006
+  - first:
+      74: -4322667696428379260
+    second: Railling.009|Cylinder.004Action.007
+  - first:
+      74: 3616826892467317154
+    second: Railling.009|Cylinder.004Action.008
+  - first:
+      74: 5790395576343319138
+    second: Railling.009|Cylinder.004Action.009
+  - first:
+      74: 565592136717986160
+    second: Railling.009|Cylinder.004Action.010
+  - first:
+      74: 4205756929685430959
+    second: Railling.009|Cylinder.004Action.011
+  - first:
+      74: -6350985231915593604
+    second: Railling.009|Cylinder.004Action.012
+  - first:
+      74: -5254264928744954317
+    second: Railling.009|Cylinder.004Action.013
+  - first:
+      74: -159676573794226374
+    second: Railling.009|Cylinder.004Action.014
+  - first:
+      74: -8612119043429352884
+    second: Railling.009|Cylinder.004Action.015
+  - first:
+      74: -7714039663526683271
+    second: Railling.009|Cylinder.004Action.016
+  - first:
+      74: -4618999854787724803
+    second: Railling.009|Cylinder.004Action.017
+  - first:
+      74: -1565532753448069585
+    second: Railling.009|Cylinder.004Action.018
+  - first:
+      74: 8938926584856942016
+    second: Railling.009|Cylinder.004Action.019
+  - first:
+      74: -2771660779026074827
+    second: Railling.009|Cylinder.004Action.020
+  - first:
+      74: -3854518678643598103
+    second: Railling.009|Cylinder.004Action.021
+  - first:
+      74: -7105704442041707229
+    second: Railling.009|Cylinder.004Action.022
+  - first:
+      74: -1914466915320820179
+    second: Railling.009|Cylinder.004Action.023
+  - first:
+      74: 3827836984249274686
+    second: Railling.009|Cylinder.004Action.024
+  - first:
+      74: 4184010531520039074
+    second: Railling.009|Cylinder.004Action.025
+  - first:
+      74: 7384215919385251166
+    second: Railling.009|Cylinder.004Action.026
+  - first:
+      74: -9022112361949658922
+    second: Railling.009|Cylinder.004Action.027
+  - first:
+      74: -8939067384949533900
+    second: Railling.009|Cylinder.004Action.028
+  - first:
+      74: 905542433654470048
+    second: Railling.009|Cylinder.004Action.029
+  - first:
+      74: 324914958232497288
+    second: Railling.009|Cylinder.004Action.030
+  - first:
+      74: -2048809890590009238
+    second: Railling.009|Cylinder.004Action.031
+  - first:
+      74: -6254815808987960854
+    second: Railling.009|Cylinder.004Action.032
+  - first:
+      74: 8670578024607136572
+    second: Railling.011|Cylinder.004Action.001
+  - first:
+      74: 6116836485516074765
+    second: Railling.011|Cylinder.004Action.002
+  - first:
+      74: 8198203240917057407
+    second: Railling.011|Cylinder.004Action.003
+  - first:
+      74: 6880505027810569276
+    second: Railling.011|Cylinder.004Action.004
+  - first:
+      74: -327278579936230051
+    second: Railling.011|Cylinder.004Action.005
+  - first:
+      74: -5003628551518837036
+    second: Railling.011|Cylinder.004Action.006
+  - first:
+      74: 4445216306754726464
+    second: Railling.011|Cylinder.004Action.007
+  - first:
+      74: -288944955486241415
+    second: Railling.011|Cylinder.004Action.008
+  - first:
+      74: -5972868390468806398
+    second: Railling.011|Cylinder.004Action.009
+  - first:
+      74: 2156861002975947325
+    second: Railling.011|Cylinder.004Action.010
+  - first:
+      74: 1073224742615665357
+    second: Railling.011|Cylinder.004Action.011
+  - first:
+      74: 2923394502605005770
+    second: Railling.011|Cylinder.004Action.012
+  - first:
+      74: -8748429673728975085
+    second: Railling.011|Cylinder.004Action.013
+  - first:
+      74: 7285709896237189535
+    second: Railling.011|Cylinder.004Action.014
+  - first:
+      74: -5723810717913110372
+    second: Railling.011|Cylinder.004Action.015
+  - first:
+      74: -3782049721658886227
+    second: Railling.011|Cylinder.004Action.016
+  - first:
+      74: 1651045985852421965
+    second: Railling.011|Cylinder.004Action.017
+  - first:
+      74: 6792093718995780646
+    second: Railling.011|Cylinder.004Action.018
+  - first:
+      74: -6654517675497653330
+    second: Railling.011|Cylinder.004Action.019
+  - first:
+      74: -2940847491149819416
+    second: Railling.011|Cylinder.004Action.020
+  - first:
+      74: 3370926863290046859
+    second: Railling.011|Cylinder.004Action.021
+  - first:
+      74: -307184597477642971
+    second: Railling.011|Cylinder.004Action.022
+  - first:
+      74: 8734263324650138256
+    second: Railling.011|Cylinder.004Action.023
+  - first:
+      74: -688966681979484124
+    second: Railling.011|Cylinder.004Action.024
+  - first:
+      74: 508269920198976967
+    second: Railling.011|Cylinder.004Action.025
+  - first:
+      74: 7987931260159395537
+    second: Railling.011|Cylinder.004Action.026
+  - first:
+      74: 3185935074735128768
+    second: Railling.011|Cylinder.004Action.027
+  - first:
+      74: -5624720989482491721
+    second: Railling.011|Cylinder.004Action.028
+  - first:
+      74: -5811559028231603852
+    second: Railling.011|Cylinder.004Action.029
+  - first:
+      74: 2742411192879665725
+    second: Railling.011|Cylinder.004Action.030
+  - first:
+      74: 8029550435277544764
+    second: Railling.011|Cylinder.004Action.031
+  - first:
+      74: -4551280110987569567
+    second: Railling.011|Cylinder.004Action.032
+  - first:
+      74: 5464026849615443870
+    second: Railling.001|Cylinder.004Action.001
+  - first:
+      74: -823688207522826029
+    second: Railling.001|Cylinder.004Action.002
+  - first:
+      74: 8506729869183641903
+    second: Railling.001|Cylinder.004Action.003
+  - first:
+      74: -2472328985640603682
+    second: Railling.001|Cylinder.004Action.004
+  - first:
+      74: -4194846880725211636
+    second: Railling.001|Cylinder.004Action.005
+  - first:
+      74: -4993266299837119884
+    second: Railling.001|Cylinder.004Action.006
+  - first:
+      74: 6538977372208737238
+    second: Railling.001|Cylinder.004Action.007
+  - first:
+      74: 6121738862738236469
+    second: Railling.001|Cylinder.004Action.008
+  - first:
+      74: -7892703573322669794
+    second: Railling.001|Cylinder.004Action.009
+  - first:
+      74: -6204909727197131992
+    second: Railling.001|Cylinder.004Action.010
+  - first:
+      74: -7317988335778756339
+    second: Railling.001|Cylinder.004Action.011
+  - first:
+      74: 473482103001554075
+    second: Railling.001|Cylinder.004Action.012
+  - first:
+      74: 4915232837111382905
+    second: Railling.001|Cylinder.004Action.013
+  - first:
+      74: 7654257633329174909
+    second: Railling.001|Cylinder.004Action.014
+  - first:
+      74: 5096591033392054749
+    second: Railling.001|Cylinder.004Action.015
+  - first:
+      74: -4559814718644361727
+    second: Railling.001|Cylinder.004Action.016
+  - first:
+      74: 8747863225199965810
+    second: Railling.001|Cylinder.004Action.017
+  - first:
+      74: -7079254994138152434
+    second: Railling.001|Cylinder.004Action.018
+  - first:
+      74: 2346773812200017720
+    second: Railling.001|Cylinder.004Action.019
+  - first:
+      74: -7044234716621046498
+    second: Railling.001|Cylinder.004Action.020
+  - first:
+      74: -8401428305975114427
+    second: Railling.001|Cylinder.004Action.021
+  - first:
+      74: 704558248655775156
+    second: Railling.001|Cylinder.004Action.022
+  - first:
+      74: -2344846950033700028
+    second: Railling.001|Cylinder.004Action.023
+  - first:
+      74: -7679543740747035268
+    second: Railling.001|Cylinder.004Action.024
+  - first:
+      74: 8997997287729720388
+    second: Railling.001|Cylinder.004Action.025
+  - first:
+      74: -3652336149535028231
+    second: Railling.001|Cylinder.004Action.026
+  - first:
+      74: 939430960962882758
+    second: Railling.001|Cylinder.004Action.027
+  - first:
+      74: 6316311885013491649
+    second: Railling.001|Cylinder.004Action.028
+  - first:
+      74: 8301788004188820823
+    second: Railling.001|Cylinder.004Action.029
+  - first:
+      74: -6621476525397094318
+    second: Railling.001|Cylinder.004Action.030
+  - first:
+      74: 2667869682278431691
+    second: Railling.001|Cylinder.004Action.031
+  - first:
+      74: -364126190109793609
+    second: Railling.001|Cylinder.004Action.032
+  - first:
+      74: -3891718947049097863
+    second: Railling.003|Cylinder.004Action.001
+  - first:
+      74: 4215693194175821828
+    second: Railling.003|Cylinder.004Action.002
+  - first:
+      74: -17916615417293101
+    second: Railling.003|Cylinder.004Action.003
+  - first:
+      74: 4165155578382207013
+    second: Railling.003|Cylinder.004Action.004
+  - first:
+      74: -4671815119656640927
+    second: Railling.003|Cylinder.004Action.005
+  - first:
+      74: 2646420385985632402
+    second: Railling.003|Cylinder.004Action.006
+  - first:
+      74: -8661012075456773530
+    second: Railling.003|Cylinder.004Action.007
+  - first:
+      74: 4592501723494113141
+    second: Railling.003|Cylinder.004Action.008
+  - first:
+      74: -2420361950558928382
+    second: Railling.003|Cylinder.004Action.009
+  - first:
+      74: -3694780083908486450
+    second: Railling.003|Cylinder.004Action.010
+  - first:
+      74: 3728856523425537365
+    second: Railling.003|Cylinder.004Action.011
+  - first:
+      74: -1215680433196684886
+    second: Railling.003|Cylinder.004Action.012
+  - first:
+      74: -8133283621823678110
+    second: Railling.003|Cylinder.004Action.013
+  - first:
+      74: -8538039594946705000
+    second: Railling.003|Cylinder.004Action.014
+  - first:
+      74: -3200278328198474510
+    second: Railling.003|Cylinder.004Action.015
+  - first:
+      74: 9087411656470675664
+    second: Railling.003|Cylinder.004Action.016
+  - first:
+      74: 5605621041418696231
+    second: Railling.003|Cylinder.004Action.017
+  - first:
+      74: -7398214015879376348
+    second: Railling.003|Cylinder.004Action.018
+  - first:
+      74: 8615513293717268219
+    second: Railling.003|Cylinder.004Action.019
+  - first:
+      74: -1827721329812091318
+    second: Railling.003|Cylinder.004Action.020
+  - first:
+      74: -7906333112984297885
+    second: Railling.003|Cylinder.004Action.021
+  - first:
+      74: -5257700975611355294
+    second: Railling.003|Cylinder.004Action.022
+  - first:
+      74: 4694113775811503120
+    second: Railling.003|Cylinder.004Action.023
+  - first:
+      74: 7649484048090734740
+    second: Railling.003|Cylinder.004Action.024
+  - first:
+      74: 6609282175317692290
+    second: Railling.003|Cylinder.004Action.025
+  - first:
+      74: 5452315683184776525
+    second: Railling.003|Cylinder.004Action.026
+  - first:
+      74: -2026697544476369019
+    second: Railling.003|Cylinder.004Action.027
+  - first:
+      74: 6250336670089950104
+    second: Railling.003|Cylinder.004Action.028
+  - first:
+      74: -3449081689268229681
+    second: Railling.003|Cylinder.004Action.029
+  - first:
+      74: 3774059521055483260
+    second: Railling.003|Cylinder.004Action.030
+  - first:
+      74: -1262275501948824445
+    second: Railling.003|Cylinder.004Action.031
+  - first:
+      74: 1513325173591672831
+    second: Railling.003|Cylinder.004Action.032
+  - first:
+      74: 8578339536305374904
+    second: Railling.004|Cylinder.004Action.001
+  - first:
+      74: -2984739897134932377
+    second: Railling.004|Cylinder.004Action.002
+  - first:
+      74: -4267655152951262279
+    second: Railling.004|Cylinder.004Action.003
+  - first:
+      74: -1970046156612658794
+    second: Railling.004|Cylinder.004Action.004
+  - first:
+      74: -2866518986835489950
+    second: Railling.004|Cylinder.004Action.005
+  - first:
+      74: -7655122368406947682
+    second: Railling.004|Cylinder.004Action.006
+  - first:
+      74: 4165820085792890807
+    second: Railling.004|Cylinder.004Action.007
+  - first:
+      74: -2707355594355358484
+    second: Railling.004|Cylinder.004Action.008
+  - first:
+      74: -4149153109437402988
+    second: Railling.004|Cylinder.004Action.009
+  - first:
+      74: -1579714322979128261
+    second: Railling.004|Cylinder.004Action.010
+  - first:
+      74: -2501556368182637446
+    second: Railling.004|Cylinder.004Action.011
+  - first:
+      74: -5030196361084550349
+    second: Railling.004|Cylinder.004Action.012
+  - first:
+      74: -7106988295067847004
+    second: Railling.004|Cylinder.004Action.013
+  - first:
+      74: -6600144044182918982
+    second: Railling.004|Cylinder.004Action.014
+  - first:
+      74: 5926508881439092729
+    second: Railling.004|Cylinder.004Action.015
+  - first:
+      74: 5923967591087556755
+    second: Railling.004|Cylinder.004Action.016
+  - first:
+      74: 4682132937325805154
+    second: Railling.004|Cylinder.004Action.017
+  - first:
+      74: -6021385317284100649
+    second: Railling.004|Cylinder.004Action.018
+  - first:
+      74: -733815200299975344
+    second: Railling.004|Cylinder.004Action.019
+  - first:
+      74: 5204388781821654191
+    second: Railling.004|Cylinder.004Action.020
+  - first:
+      74: 1453304794091017816
+    second: Railling.004|Cylinder.004Action.021
+  - first:
+      74: 8511999101336498739
+    second: Railling.004|Cylinder.004Action.022
+  - first:
+      74: -3284698218507793856
+    second: Railling.004|Cylinder.004Action.023
+  - first:
+      74: 964087446625767308
+    second: Railling.004|Cylinder.004Action.024
+  - first:
+      74: -3564425389178130925
+    second: Railling.004|Cylinder.004Action.025
+  - first:
+      74: -205011872162865600
+    second: Railling.004|Cylinder.004Action.026
+  - first:
+      74: -5060109004546253917
+    second: Railling.004|Cylinder.004Action.027
+  - first:
+      74: -2775799149918950657
+    second: Railling.004|Cylinder.004Action.028
+  - first:
+      74: -4844844513599414034
+    second: Railling.004|Cylinder.004Action.029
+  - first:
+      74: 5079456085883628689
+    second: Railling.004|Cylinder.004Action.030
+  - first:
+      74: 6240561916619494399
+    second: Railling.004|Cylinder.004Action.031
+  - first:
+      74: -6012636638660636122
+    second: Railling.004|Cylinder.004Action.032
+  - first:
+      74: -4149238777742799812
+    second: Wall Lantai2.001|Cylinder.004Action.001
+  - first:
+      74: 1316795817117559388
+    second: Wall Lantai2.001|Cylinder.004Action.002
+  - first:
+      74: -4566847926381079339
+    second: Wall Lantai2.001|Cylinder.004Action.003
+  - first:
+      74: -1112148940647513222
+    second: Wall Lantai2.001|Cylinder.004Action.004
+  - first:
+      74: -5731381873977777922
+    second: Wall Lantai2.001|Cylinder.004Action.005
+  - first:
+      74: -289604685514441056
+    second: Wall Lantai2.001|Cylinder.004Action.006
+  - first:
+      74: -3922881720853530293
+    second: Wall Lantai2.001|Cylinder.004Action.007
+  - first:
+      74: 8544778138559908479
+    second: Wall Lantai2.001|Cylinder.004Action.008
+  - first:
+      74: 5813781286069732896
+    second: Wall Lantai2.001|Cylinder.004Action.009
+  - first:
+      74: -5321131094401472531
+    second: Wall Lantai2.001|Cylinder.004Action.010
+  - first:
+      74: 5646983743175038248
+    second: Wall Lantai2.001|Cylinder.004Action.011
+  - first:
+      74: -8007225360365697896
+    second: Wall Lantai2.001|Cylinder.004Action.012
+  - first:
+      74: 4006256908682789378
+    second: Wall Lantai2.001|Cylinder.004Action.013
+  - first:
+      74: -2814342714049069269
+    second: Wall Lantai2.001|Cylinder.004Action.014
+  - first:
+      74: 5567063283189371637
+    second: Wall Lantai2.001|Cylinder.004Action.015
+  - first:
+      74: -5621648003356208154
+    second: Wall Lantai2.001|Cylinder.004Action.016
+  - first:
+      74: -8710376051510601290
+    second: Wall Lantai2.001|Cylinder.004Action.017
+  - first:
+      74: 5305636495696600526
+    second: Wall Lantai2.001|Cylinder.004Action.018
+  - first:
+      74: -6972798186626708594
+    second: Wall Lantai2.001|Cylinder.004Action.019
+  - first:
+      74: 7380179386260004474
+    second: Wall Lantai2.001|Cylinder.004Action.020
+  - first:
+      74: 5929718401594455478
+    second: Wall Lantai2.001|Cylinder.004Action.021
+  - first:
+      74: 1048607511292049485
+    second: Wall Lantai2.001|Cylinder.004Action.022
+  - first:
+      74: 4503598857947713082
+    second: Wall Lantai2.001|Cylinder.004Action.023
+  - first:
+      74: -7652471373514802545
+    second: Wall Lantai2.001|Cylinder.004Action.024
+  - first:
+      74: -5736516082996782162
+    second: Wall Lantai2.001|Cylinder.004Action.025
+  - first:
+      74: 3916751615248260707
+    second: Wall Lantai2.001|Cylinder.004Action.026
+  - first:
+      74: -2295144452797230672
+    second: Wall Lantai2.001|Cylinder.004Action.027
+  - first:
+      74: -755865423432320334
+    second: Wall Lantai2.001|Cylinder.004Action.028
+  - first:
+      74: -1096328559848494945
+    second: Wall Lantai2.001|Cylinder.004Action.029
+  - first:
+      74: 5659902914381533233
+    second: Wall Lantai2.001|Cylinder.004Action.030
+  - first:
+      74: -6343494383058632968
+    second: Wall Lantai2.001|Cylinder.004Action.031
+  - first:
+      74: 2810742887528798477
+    second: Wall Lantai2.001|Cylinder.004Action.032
+  - first:
+      74: -3768182222815759794
+    second: Pillars.001|Cylinder.004Action.003
+  - first:
+      74: 9034512936564229613
+    second: Pillars.002|Cylinder.004Action.019
+  - first:
+      74: -362686432115009094
+    second: Pillars.003|Cylinder.004Action.020
+  - first:
+      74: 7252453808921353150
+    second: Pillars.004|Cylinder.004Action.021
+  - first:
+      74: 7486906705045720002
+    second: Pillars.005|Cylinder.004Action.022
+  - first:
+      74: 8559926074486590929
+    second: Pillars.006|Cylinder.004Action.025
+  - first:
+      74: 4471555179804936026
+    second: Pillars.007|Cylinder.004Action.027
+  - first:
+      74: 2401861265053867259
+    second: Pillars.008|Cylinder.004Action.029
+  - first:
+      74: 8204536141609885007
+    second: Pillars.009|Cylinder.004Action.030
+  - first:
+      74: -952735134604149053
+    second: Pillars.010|Cylinder.004Action.031
+  - first:
+      74: 5570650881570540213
+    second: Pillars.011|Cylinder.004Action.032
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
