@@ -1121,7 +1121,7 @@ PrefabInstance:
     - target: {fileID: 721559471654190917, guid: 8cffc2d0a8a5fc24f91888fd96b6dcd1,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.7999878
+      value: 1.8000488
       objectReference: {fileID: 0}
     - target: {fileID: 721559471654190922, guid: 8cffc2d0a8a5fc24f91888fd96b6dcd1,
         type: 3}
@@ -3347,6 +3347,11 @@ PrefabInstance:
       propertyPath: aimOffset.z
       value: 0.23
       objectReference: {fileID: 0}
+    - target: {fileID: 1849284776446080568, guid: 81b0235f44f51274a9cce8d5d241e39d,
+        type: 3}
+      propertyPath: sensitivity
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4712981098172247603, guid: 81b0235f44f51274a9cce8d5d241e39d,
         type: 3}
       propertyPath: cs
@@ -3432,6 +3437,11 @@ PrefabInstance:
       propertyPath: cm
       value: 
       objectReference: {fileID: 211427006}
+    - target: {fileID: 5595360278675449486, guid: 81b0235f44f51274a9cce8d5d241e39d,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 949541143}
     - target: {fileID: 5595360278675449486, guid: 81b0235f44f51274a9cce8d5d241e39d,
         type: 3}
       propertyPath: scroll

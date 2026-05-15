@@ -25,13 +25,20 @@ public class SettingsManager : MonoBehaviour
             string option = resolutions[i].width + "x" + resolutions[i].height;
             options.Add(option);
 
+
             if (resolutions[i].width == Screen.currentResolution.width &&
-                resolutions[i].height == Screen.currentResolution.height);
+                resolutions[i].height == Screen.currentResolution.height)
             {
                 currentResolutionIndex = i;
             }
         }
         resolutionOption.AddOptions(options);
+
+        if (PlayerPrefs.HasKey("Resolution Value"))
+        {
+            currentResolutionIndex = PlayerPrefs.GetInt("Resolution Value");
+        }
+
         resolutionOption.value = currentResolutionIndex;
         resolutionOption.RefreshShownValue();
 
@@ -52,12 +59,23 @@ public class SettingsManager : MonoBehaviour
         {
             SetSFXVolume();
         }
+
+        if (PlayerPrefs.HasKey("Full Screen Value"))
+        {
+            bool isFullScreen = PlayerPrefs.GetInt("Full Screen Value") == 1;
+            Screen.fullScreen = isFullScreen;
+        }
+        else
+        {
+            steFullScreen(true);
+        }
     }
 
     public void SetResolution(int resoIndex)
     {
         Resolution reso = resolutions[resoIndex];
         Screen.SetResolution(reso.width, reso.height, Screen.fullScreen);
+        PlayerPrefs.SetInt("Resolution Value", resoIndex);
     }
     public void SetMusicVolume()
     {
@@ -90,5 +108,6 @@ public class SettingsManager : MonoBehaviour
     public void steFullScreen(bool isFullScreen)
     {
         Screen.fullScreen = isFullScreen;
+        PlayerPrefs.SetInt("Full Screen Value", isFullScreen ? 1 : 0);
     }
 } 

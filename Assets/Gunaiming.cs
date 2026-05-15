@@ -38,6 +38,10 @@ public class Gunaiming : MonoBehaviour
             player.changeFOV(60f);
             cm.ShowCrosshair(true);
         }
+        if(Input.GetAxis("Mouse ScrollWheel")  < 0f || Input.GetAxis("Mouse ScrollWheel") > 0f)
+        {
+            aiming = false;
+        }
     }
 
     public void AssignOriginalTransform()
