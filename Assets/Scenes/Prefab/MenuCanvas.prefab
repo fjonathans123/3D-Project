@@ -932,6 +932,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: SettingsPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 1988261632333421501, guid: 4aef6598d983ff14ab4d7f7a99673550,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988261632780507734, guid: 4aef6598d983ff14ab4d7f7a99673550,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988261633086977836, guid: 4aef6598d983ff14ab4d7f7a99673550,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988261633086977836, guid: 4aef6598d983ff14ab4d7f7a99673550,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988261633086977836, guid: 4aef6598d983ff14ab4d7f7a99673550,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988261633542409049, guid: 4aef6598d983ff14ab4d7f7a99673550,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988261633915428916, guid: 4aef6598d983ff14ab4d7f7a99673550,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988261633915428916, guid: 4aef6598d983ff14ab4d7f7a99673550,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aef6598d983ff14ab4d7f7a99673550, type: 3}
 --- !u!1 &1231400635036616778 stripped

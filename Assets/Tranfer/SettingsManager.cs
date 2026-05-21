@@ -12,24 +12,33 @@ public class SettingsManager : MonoBehaviour
 
     Resolution[] resolutions;
     public Dropdown resolutionOption;
+    [SerializeField] private Toggle fullScreenToggle;
 
     void Start()
     {
         resolutions = Screen.resolutions;
         resolutionOption.ClearOptions();
         List<string> options = new List<string>();
+        List<Resolution> filterResolution = new List<Resolution>();
         int currentResolutionIndex = 0;
+
+        HashSet<string> addedResolutions = new HashSet<string>();
 
         for (int i =0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + "x" + resolutions[i].height;
-            options.Add(option);
 
-
-            if (resolutions[i].width == Screen.currentResolution.width &&
-                resolutions[i].height == Screen.currentResolution.height)
+            if (!addedResolutions.Contains(option))
             {
-                currentResolutionIndex = i;
+                addedResolutions.Add(option);
+                options.Add(option);
+                filterResolution.Add(resolutions[i]);
+
+                if (resolutions[i].width == Screen.currentResolution.width &&
+                    resolutions[i].height  ==  Screen.currentResolution.height)
+                {
+                    currentResolutionIndex = filterResolution.Count - 1;
+                }
             }
         }
         resolutionOption.AddOptions(options);
@@ -64,6 +73,7 @@ public class SettingsManager : MonoBehaviour
         {
             bool isFullScreen = PlayerPrefs.GetInt("Full Screen Value") == 1;
             Screen.fullScreen = isFullScreen;
+            fullScreenToggle.isOn = isFullScreen;
         }
         else
         {
