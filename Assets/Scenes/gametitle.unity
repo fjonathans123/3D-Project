@@ -494,10 +494,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1231400633292855470, guid: d077129c0933dbe42b5504334d893e57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1231400633303816835, guid: d077129c0933dbe42b5504334d893e57,
         type: 3}
       propertyPath: m_Name
       value: Input Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231400633405862851, guid: d077129c0933dbe42b5504334d893e57,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.00090009003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231400633405862851, guid: d077129c0933dbe42b5504334d893e57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1231400633570637834, guid: d077129c0933dbe42b5504334d893e57,
         type: 3}
@@ -609,6 +624,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1231400633570637839, guid: d077129c0933dbe42b5504334d893e57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231400633649997019, guid: d077129c0933dbe42b5504334d893e57,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.00090009003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231400633649997019, guid: d077129c0933dbe42b5504334d893e57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231400633649997019, guid: d077129c0933dbe42b5504334d893e57,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.00090009003
+      objectReference: {fileID: 0}
     - target: {fileID: 1231400634268638408, guid: d077129c0933dbe42b5504334d893e57,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -618,6 +653,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231400634677348769, guid: d077129c0933dbe42b5504334d893e57,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231400635036616778, guid: d077129c0933dbe42b5504334d893e57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d077129c0933dbe42b5504334d893e57, type: 3}
