@@ -27,11 +27,13 @@ public class krocoscript : MonoBehaviour
     private Coroutine currentDPSCoroutine;
 
     public bool isStun = false;
+    Enemydefeatscript defeat;
 
     public int MoneyDrop = 0;
     // Start is called before the first frame update
     void Start()
     {
+        defeat = GetComponent<Enemydefeatscript>();
         data = GameObject.FindGameObjectWithTag("stats").GetComponent<gameData>();
         element = GameObject.FindGameObjectWithTag("Player").GetComponent<ElementController>();
         agent = GetComponent<NavMeshAgent>();
@@ -95,6 +97,7 @@ public class krocoscript : MonoBehaviour
             Debug.Log("enemy Died");
             anim.SetTrigger("Die");
             GetComponent<Collider>().enabled = false;
+            defeat.EnemyDefeated();
             StartCoroutine(waitForDestroy(10f));
         }
         else
