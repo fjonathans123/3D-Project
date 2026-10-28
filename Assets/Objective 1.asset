@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Objective 1
   m_EditorClassIdentifier: 
   objectiveName: Defeat the Enemy!
-  isComplete: 0
+  isComplete: 1
   description: 
   subobjectives:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   requireCount: 3
-  currentCount: 0
+  currentCount: 3
   Reward: 500
-  objType: 0
+  objType: 1

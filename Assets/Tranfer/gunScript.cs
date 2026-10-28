@@ -84,6 +84,14 @@ public class gunScript : MonoBehaviour
         totalAmmo = MaxAmmo - magazineSize;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        conversationStarter newCS = other.GetComponent<conversationStarter>();
+        if (newCS != null)
+        {
+            cs = newCS;
+        }
+    }
     private void Update()
     {
         if (cs != null)
