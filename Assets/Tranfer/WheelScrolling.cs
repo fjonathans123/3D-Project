@@ -17,16 +17,13 @@ public class WheelScrolling : MonoBehaviour
 
     public int healType, ammoType;
 
-    private GameManager gm;
-
     public gunScript[] guns;
     public Gunaiming[] gunAim;
 
     // Start is called before the first frame update
     void Start()
     {
-        stats = GameObject.FindGameObjectWithTag("stats").GetComponent<GameManager>();
-        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        stats = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         foreach(var aim in gunAim)
         {
@@ -151,31 +148,82 @@ public class WheelScrolling : MonoBehaviour
         {
             if (healType == 0 && data.healthAmount1 >0)
             {
-                data.healthAmount1--;
-                stats.health++;
+                if (stats.health < stats.MaxHealth)
+                {
+                    data.healthAmount1--;
+                    stats.health += 1;
+                    if (stats.health > stats.MaxHealth)
+                    {
+                        stats.health = stats.MaxHealth;
+                    }
+                }
+                else
+                    Debug.Log("Health Full");
             }
             else if (healType == 1 && data.healthAmount2 > 0)
             {
-                data.healthAmount2--;
-                stats.health += 10;
+                if (stats.health < stats.MaxHealth)
+                {
+                    data.healthAmount2--;
+                    stats.health += 10;
+                    if (stats.health > stats.MaxHealth)
+                    {
+                        stats.health = stats.MaxHealth;
+                    }
+                }
+                else
+                    Debug.Log("Health Full");
             }
         }
         if (switches.selectedweapon == 4)
         {
             if (ammoType == 0 && data.ammoAmount1 > 0)
             {
-                data.ammoAmount1--;
-                guns[0].totalAmmo += 30;
+                if(guns[0].totalAmmo < guns[0].MaxAmmo - guns[0].magazineSize)
+                {
+                    data.ammoAmount1--;
+                    guns[0].totalAmmo += 30;
+                    if (guns[0].totalAmmo > guns[0].MaxAmmo - guns[0].magazineSize)
+                    {
+                        guns[0].totalAmmo = guns[0].MaxAmmo - guns[0].magazineSize;
+                    }
+                }
+                else
+                {
+                    Debug.Log("ammo full");
+                }
             }
             else if (ammoType == 1 && data.ammoAmount2 > 0)
             {
-                data.ammoAmount2--;
-                guns[1].totalAmmo += 30;
+                if (guns[1].totalAmmo < guns[1].MaxAmmo - guns[1].magazineSize)
+                {
+                    data.ammoAmount2--;
+                    guns[1].totalAmmo += 30;
+                    if (guns[1].totalAmmo > guns[1].MaxAmmo - guns[1].magazineSize)
+                    {
+                        guns[1].totalAmmo = guns[1].MaxAmmo - guns[1].magazineSize;
+                    }
+                }
+                else
+                {
+                    Debug.Log("ammo full");
+                }
             }
             else if (ammoType == 2 && data.ammoAmount3 > 0)
             {
-                data.ammoAmount3--;
-                guns[2].totalAmmo += 30;
+                if (guns[2].totalAmmo < guns[2].MaxAmmo - guns[2].magazineSize)
+                {
+                    data.ammoAmount3--;
+                    guns[2].totalAmmo += 30;
+                    if (guns[2].totalAmmo > guns[2].MaxAmmo - guns[2].magazineSize)
+                    {
+                        guns[2].totalAmmo = guns[2].MaxAmmo - guns[2].magazineSize;
+                    }
+                }
+                else
+                {
+                    Debug.Log("ammo full");
+                }
             }
         }
     }
